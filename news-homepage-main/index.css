@@ -1,5 +1,5 @@
 :root {
-  --nav-width-mobile: 90%;
+  --nav-width-mobile: 70%;
   --nav-width-tablet: 40%;
   --nav-width-desktop: 250px;
   --body-font: "Inter", sans-serif;
@@ -38,7 +38,13 @@ h3 {
 }
 
 /* === COMPONENTS */
-nav {
+ul {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+#sidebar {
   width: 0;
   height: 100vh;
   background-color: white;
@@ -47,9 +53,32 @@ nav {
   right: 0;
   z-index: 1;
 }
-nav.nav-show {
+#sidebar.nav-show {
   width: var(--nav-width-mobile);
 }
 
-#button-open {
+.sidebar__btn-close {
+  text-align: end;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.sidebar__nav-list {
+  margin-left: 1rem;
+  margin-top: 4rem;
+  list-style-type: none;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 0; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
 }
