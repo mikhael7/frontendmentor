@@ -19,6 +19,7 @@
 body {
   font-family: var(--body-font);
   font-weight: var(--font-weight-default);
+  margin: 1rem;
 }
 h1,
 h2,
@@ -69,6 +70,13 @@ ul {
   list-style-type: none;
 }
 
+.sidebar__btn-open {
+  background: none;
+  border: none;
+  text-align: end;
+  margin-right: 1rem;
+}
+
 #overlay {
   position: fixed; /* Sit on top of the page content */
   display: none; /* Hidden by default */
@@ -81,4 +89,12 @@ ul {
   background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
   z-index: 0; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
+}
+
+.header {
+  margin-bottom: 1rem;
+}
+
+.content {
+  margin-bottom: 1rem;
 }
