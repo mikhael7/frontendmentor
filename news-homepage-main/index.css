@@ -1,0 +1,40 @@
+:root {
+  --nav-width-mobile: 90%;
+  --nav-width-tablet: 40%;
+  --nav-width-desktop: 250px;
+  --body-font: "Inter", sans-serif;
+  --font-weight-default: 400;
+  --font-weight-header: 500;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("./assets/fonts/static/Inter-Regular.ttf", format("truetype"));
+}
+
+* {
+  outline: 2px solid pink;
+}
+
+body {
+  font-family: var(--body-font);
+  font-weight: var(--font-weight-default);
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: var(--font-weight-header);
+}
+
+/* === REUSABLE CLASSES */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.flex-between {
+  justify-content: space-between;
+}
+
+/* === COMPONENTS */
