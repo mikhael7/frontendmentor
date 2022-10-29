@@ -27,7 +27,10 @@
     </style>
   </head>
   <body>
-    <div id="sidebar__" class="sidebar">
+    <nav id="sidebar" class="sidebar___">
+      <div class="sidebar__btn-close" id="button-close">
+        <image src="./assets/images/icon-menu-close.svg" />
+      </div>
       <li class="menu">
         <ul>
           Home
@@ -45,14 +48,13 @@
           Categories
         </ul>
       </li>
-    </div>
-    <button
-      class="sidebar__button-open"
-      id="overlay-sidebar"
-      onclick="sidebar_on()"
-    >
-      <image src="./assets/images/icon-menu.svg" />
-    </button>
+    </nav>
+    <header>
+      <button class="button-open" id="overlay-sidebar">
+        <image src="./assets/images/icon-menu.svg" />
+      </button>
+    </header>
+
     <main>
       The Bright Future of Web 3.0? We dive into the next evolution of the web
       that claims to put the power of the platforms back into the hands of the
@@ -73,21 +75,5 @@
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
   </body>
-  <script type="text/javascript">
-    function sidebar_on() {
-      document.getElementById("overlay-sidebar").style.display = "block";
-      document.getElementById("sidebar__button-open").style.display = "none";
-      document.getElementById("sidebar__button-close").style.display = "block";
-      document.getElementById("sidebar__").style.width = "50%";
-      document.getElementById("sidebar__").style.display = "block";
-    }
-
-    function sidebar_off() {
-      document.getElementById("overlay-sidebar").style.display = "none";
-      document.getElementById("sidebar__button-open").style.display = "block";
-      document.getElementById("sidebar__button-close").style.display = "none";
-      document.getElementById("sidebar__").style.width = "0";
-      document.getElementById("sidebar__").style.display = "hidden";
-    }
-  </script>
+  <script defer type="text/javascript" src="./script.js"></script>
 </html>
