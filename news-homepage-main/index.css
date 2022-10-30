@@ -86,6 +86,10 @@ h3 {
   cursor: pointer; /* Add a pointer on hover */
 }
 
+main.content {
+  margin-bottom: 1rem;
+}
+
 /* #region header */
 header {
   margin-bottom: 1rem;
@@ -131,6 +135,14 @@ section > .header_button {
 }
 /* #endregion section header */
 
-.content {
+section.middle_section {
+  background-color: navy;
+  padding: 1rem;
+}
+.middle_section > h1 {
+  color: orange;
   margin-bottom: 1rem;
+}
+.middle_section ~ .middle_section_div {
+  color: white;
 }
