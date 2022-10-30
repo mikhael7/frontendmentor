@@ -1,0 +1,136 @@
+/* https://github.com/asolitudedev/animated-sidebar-navigation-overlay */
+
+:root {
+  --nav-width-mobile: 70%;
+  --nav-width-tablet: 40%;
+  --nav-width-desktop: 250px;
+  --body-font: "Inter", sans-serif;
+  --font-weight-default: 400;
+  --font-weight-header: 500;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("./assets/fonts/static/Inter-Regular.ttf", format("truetype"));
+}
+
+* {
+  outline: 2px solid pink;
+}
+
+body {
+  font-family: var(--body-font);
+  font-weight: var(--font-weight-default);
+  margin: 1rem;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: var(--font-weight-header);
+}
+
+/* === REUSABLE CLASSES */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.flex-between {
+  justify-content: space-between;
+}
+
+/* === COMPONENTS */
+
+/* #region sidebar */
+#sidebar {
+  width: 0;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+#sidebar.nav-show {
+  width: var(--nav-width-mobile);
+}
+#sidebar > .sidebar_btn-close {
+  text-align: end;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+#sidebar > .sidebar_nav-list {
+  margin-left: 1rem;
+  margin-top: 4rem;
+  list-style-type: none;
+}
+#sidebar > .sidebar__nav-list > ul {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+/* #endregion sidebar */
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 0; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+/* #region header */
+header {
+  margin-bottom: 1rem;
+}
+header > .sidebar_btn-open {
+  background: none;
+  border: none;
+  text-align: end;
+  margin-right: 1rem;
+}
+/* #endregion header */
+
+/* #region section header */
+section.header_section {
+  margin-bottom: 2rem;
+}
+section > .header_image {
+  background-image: url("./assets/images/image-web-3-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 320px;
+}
+section > .header_title {
+  font-weight: 700;
+  margin-top: 1rem;
+}
+section > .header_desc {
+  font-weight: 400;
+  font-size: 12pt;
+  color: gray;
+}
+section > .header_button {
+  color: white;
+  border: none;
+  background: none;
+  background-color: orangered;
+  text-transform: uppercase;
+  letter-spacing: 5pt;
+  padding: 1em;
+  font-size: 10pt;
+  font-weight: 600;
+}
+/* #endregion section header */
+
+.content {
+  margin-bottom: 1rem;
+}
