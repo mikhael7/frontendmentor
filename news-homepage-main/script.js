@@ -11,3 +11,12 @@ btnClose.addEventListener("click", () => {
   sidebar.classList.remove("nav-show");
   overlay.style.display = "none";
 });
+
+if (
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ||
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.platform)
+) {
+  console.log("mobile device");
+} else {
+  console.log("desktop device");
+}
