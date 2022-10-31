@@ -7,6 +7,14 @@
   --body-font: "Inter", sans-serif;
   --font-weight-default: 400;
   --font-weight-header: 500;
+  --font-weight-light: 200;
+  --font-weight-bold: 700;
+  --font-size-xs: 10pt;
+  --font-size-s: 12pt;
+  --font-size-m: 14pt;
+  --font-size-l: 16pt;
+  --font-size-xl: 18pt;
+  --font-size-xxl: 20pt;
 }
 
 @font-face {
@@ -21,7 +29,7 @@
 body {
   font-family: var(--body-font);
   font-weight: var(--font-weight-default);
-  margin: 1rem;
+  margin: 0.5rem;
 }
 h1,
 h2,
@@ -114,12 +122,12 @@ section > .header_image {
   height: 320px;
 }
 section > .header_title {
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   margin-top: 1rem;
 }
 section > .header_desc {
-  font-weight: 400;
-  font-size: 12pt;
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-s);
   color: gray;
 }
 section > .header_button {
@@ -130,19 +138,41 @@ section > .header_button {
   text-transform: uppercase;
   letter-spacing: 5pt;
   padding: 1em;
-  font-size: 10pt;
-  font-weight: 600;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
 }
 /* #endregion section header */
 
+/* #region section middle */
 section.middle_section {
-  background-color: navy;
+  background-color: black;
   padding: 1rem;
 }
 .middle_section > h1 {
   color: orange;
   margin-bottom: 1rem;
 }
-.middle_section ~ .middle_section_div {
+.middle_section_div {
+  border-bottom: 1px solid white;
+}
+.middle_section_div > h4,
+p {
   color: white;
 }
+.middle_section_title {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.middle_section_desc {
+  margin-bottom: 2rem;
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-s);
+}
+.middle_section_div:last-child {
+  border: none;
+}
+.middle_section_div:last-child > .middle_section_desc {
+  margin-bottom: 0.5rem;
+}
+/* #endregion section middle */
+
