@@ -22,10 +22,6 @@
   src: url("./assets/fonts/static/Inter-Regular.ttf", format("truetype"));
 }
 
-* {
-  outline: 2px solid pink;
-}
-
 body {
   font-family: var(--body-font);
   font-weight: var(--font-weight-default);
