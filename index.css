@@ -338,6 +338,7 @@ footer {
   }
   /* #endregion middle_section */
 
+  /* #region bottom_section */
   main > section.bottom_section {
     display: flex;
     grid-gap: 4rem;
@@ -367,6 +368,8 @@ footer {
     color: var(--soft-red);
     cursor: pointer;
   }
+  /* #endregion bottom_section */
+
   footer {
     margin-top: 2rem;
     margin-bottom: 0;
