@@ -6,15 +6,21 @@
   --nav-width-desktop: 250px;
   --body-font: "Inter", sans-serif;
   --font-weight-default: 400;
-  --font-weight-header: 500;
-  --font-weight-light: 200;
   --font-weight-bold: 700;
-  --font-size-xs: 10pt;
-  --font-size-s: 12pt;
-  --font-size-m: 14pt;
-  --font-size-l: 16pt;
-  --font-size-xl: 18pt;
-  --font-size-xxl: 20pt;
+  --font-weight-bolder: 800;
+  --font-size-xs: 11pt;
+  --font-size-s: 13pt;
+  --font-size-m: 15px;
+  --font-size-l: 17pt;
+  --font-size-xl: 19pt;
+  --font-size-xxl: 21pt;
+  /* Color Palette */
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  --off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
 }
 
 @font-face {
@@ -123,37 +129,36 @@ section > .header_title {
 }
 section > .header_desc {
   font-weight: var(--font-weight-light);
-  font-size: var(--font-size-s);
-  color: gray;
+  color: var(--dark-grayish-blue);
+  font-size: var(--font-size-m);
 }
 section > .header_button {
-  color: white;
+  color: var(--off-white);
   border: none;
   background: none;
-  background-color: orangered;
+  background-color: var(--soft-red);
   text-transform: uppercase;
   letter-spacing: 5pt;
   padding: 1em;
-  font-size: var(--font-size-xs);
   font-weight: var(--font-weight-bold);
 }
 /* #endregion section header */
 
 /* #region section middle */
 section.middle_section {
-  background-color: black;
+  background-color: var(--very-dark-blue);
   padding: 1rem;
 }
 .middle_section > h1 {
-  color: orange;
+  color: var(--soft-orange);
   margin-bottom: 1rem;
 }
 .middle_section_div {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--off-white);
 }
 .middle_section_div > h4,
 .middle_section_div > p {
-  color: white;
+  color: var(--off-white);
 }
 .middle_section_title {
   margin-top: 2rem;
@@ -162,7 +167,7 @@ section.middle_section {
 .middle_section_desc {
   margin-bottom: 2rem;
   font-weight: var(--font-weight-light);
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-m);
 }
 .middle_section_div:last-child {
   border: none;
@@ -194,23 +199,25 @@ section.middle_section {
 }
 .column > h1 {
   font-weight: var(--font-weight-bold);
-  color: lightslategray;
+  color: var(--grayish-blue);
   margin-bottom: 0.5rem;
 }
 .column > h4 {
-  margin-top: 0.5rem;
+  margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-m);
 }
 .column > p {
-  margin-top: 0.5rem;
+  margin-top: 0;
   margin-bottom: 0;
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-m);
 }
 /* #endregion section bottom */
 
 footer {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+@media screen && max-width >= 375px {
 }
