@@ -1,0 +1,69 @@
+/* Monserrat wght */
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
+    format("truetype-variations");
+  font-weight: 125 950;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf")
+    format("truetype-variations");
+  font-weight: 125 950;
+  font-stretch: 75% 125%;
+  font-style: italic;
+}
+/* Fraunces SOFT WONK opsz wght */
+@font-face {
+  font-family: "Fraunces";
+  src: url("./fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")
+    format("truetype-variations");
+  font-weight: 125 950;
+  font-stretch: 75% 125%;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Fraunces";
+  src: url("./fonts/Fraunces/Fraunces-Italic-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")
+    format("truetype-variations");
+  font-weight: 125 950;
+  font-stretch: 75% 125%;
+  font-style: italic;
+}
+
+:root {
+  --width-mobile: 375px;
+  --width-desktop: 1440px;
+  /* Color Pallete */
+  --color-dark-cyan: hsl(158, 36%, 37%);
+  --color-cream: hsl(30, 38%, 92%);
+  --color-very-dark-blue: hsl(212, 21%, 14%);
+  --color-dark-grayish-blue: hsl(228, 12%, 48%);
+  --color-white: hsl(0, 0%, 100%);
+  /* Fonts Sizes */
+  --font-size-p: 14px;
+  --font-size-xs: 10pt;
+  --font-size-s: 12pt;
+  --font-size-m: 14pt;
+  --font-size-l: 16pt;
+  --font-size-xl: 18pt;
+  --font-size-xxl: 20pt;
+  /* Fonts Weights */
+  --font-weight-normal: 500;
+  --font-weight-bold: 700;
+  --font-family-Montserrat: "Montserrat";
+  --font-family-Fraunces: "Fraunces";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-size: var(--font-size-p);
+}
+* {
+  outline: 1px solid pink;
+}
+body {
+  font-family: var(--font-family-Montserrat);
+}
