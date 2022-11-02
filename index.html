@@ -29,7 +29,7 @@
   <body>
     <header class="flex flex-between header">
       <div>
-        <image class="logo" src="./assets/images/logo.svg" />
+        <image class="logo" src="./assets/images/logo.svg" alt="logo" />
       </div>
       <button id="button-open" class="sidebar_btn-open">
         <image src="./assets/images/icon-menu.svg" />
@@ -38,23 +38,13 @@
         <div class="sidebar_btn-close" id="button-close">
           <image src="./assets/images/icon-menu-close.svg" />
         </div>
-        <li class="sidebar_nav-list">
-          <ul>
-            Home
-          </ul>
-          <ul>
-            New
-          </ul>
-          <ul>
-            Popular
-          </ul>
-          <ul>
-            Trending
-          </ul>
-          <ul>
-            Categories
-          </ul>
-        </li>
+        <ul class="sidebar_nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#new">New</a></li>
+          <li><a href="#popular">Popular</a></li>
+          <li><a href="#trending">Trending</a></li>
+          <li><a href="#categories">Categories</a></li>
+        </ul>
       </nav>
     </header>
     <div id="overlay"></div>
