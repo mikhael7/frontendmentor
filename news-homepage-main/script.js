@@ -12,11 +12,12 @@ btnClose.addEventListener("click", () => {
   overlay.style.display = "none";
 });
 
-if (
-  /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ||
-  /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.platform)
-) {
-  console.log("mobile device");
-} else {
-  console.log("desktop device");
-}
+// detect if device is mobile or not
+// if (
+//   /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ||
+//   /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.platform)
+// ) {
+//   console.log("mobile device");
+// } else {
+//   console.log("desktop device");
+// }
