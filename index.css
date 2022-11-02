@@ -34,7 +34,6 @@
 
 body {
   font-family: var(--body-font);
-  font-weight: var(--font-weight-default);
   margin: 0.5rem;
 }
 h1,
@@ -130,11 +129,12 @@ section > .header_image {
   width: 100%;
   height: 320px;
 }
-section > .header_card > .header_title {
+section.header_section > div.header_card > h1.header_title {
   font-weight: var(--font-weight-bold);
+  font-size: 32pt;
   margin-top: 1rem;
 }
-section > .header_card > .header_text > .header_desc {
+section.header_section > .header_card > .header_text > .header_desc {
   font-weight: var(--font-weight-light);
   color: var(--dark-grayish-blue);
   font-size: var(--font-size-m);
@@ -148,7 +148,8 @@ section > .header_card > .header_text > .header_button {
   letter-spacing: 5pt;
   padding: 1em;
   font-weight: var(--font-weight-bold);
-  width: 100%;
+  width: fit-content;
+  height: fit-content;
 }
 /* #endregion section header */
 
@@ -171,6 +172,8 @@ section.middle_section {
 .middle_section_title {
   margin-top: 2rem;
   margin-bottom: 0.5rem;
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-bold);
 }
 .middle_section_desc {
   margin-bottom: 2rem;
@@ -215,6 +218,7 @@ section.bottom_section {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: var(--font-weight-bold);
+  font-size: 15pt;
 }
 .column > p {
   margin-top: 0;
@@ -344,7 +348,7 @@ footer {
   }
   section.middle_section > div.middle_section_div > h2.middle_section_title {
     font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-l)
+    font-size: var(--font-size-l);
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
@@ -389,16 +393,16 @@ footer {
     > section.bottom_section
     > div.bottom_section_container
     > div.column
-    > h2.bottom_section_title{
-      font-size: var(--font-size-m);
-    }
-    main
+    > h2.bottom_section_title {
+    font-size: var(--font-size-m);
+  }
+  main
     > section.bottom_section
     > div.bottom_section_container
     > div.column
-    > p.bottom_section_desc{
-      font-size: var(--font-size-m);
-    }
+    > p.bottom_section_desc {
+    font-size: var(--font-size-m);
+  }
   /* #endregion bottom_section */
 
   footer {
