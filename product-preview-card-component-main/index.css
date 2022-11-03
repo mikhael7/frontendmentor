@@ -54,6 +54,10 @@
   --font-weight-bold: 700;
   --font-family-Montserrat: "Montserrat";
   --font-family-Fraunces: "Fraunces";
+  /* Others */
+  --border-radius-s: 5pt;
+  --border-radius-m: 10pt;
+  --border-radius-l: 15pt;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -63,7 +67,7 @@ p {
   color: var(--color-dark-grayish-blue);
 }
 * {
-  outline: 1px solid pink;
+  /* outline: 1px solid pink; */
 }
 html,
 body {
@@ -93,18 +97,18 @@ body {
 /* #endregion Shared Component */
 
 div.card {
-  border-radius: 15pt;
+  border-radius: var(--border-radius-s);
 }
 div.card > div.card-header {
   margin: 0;
   padding: 0;
-  border-top-left-radius: 15pt;
-  border-top-right-radius: 15pt;
+  border-top-left-radius: var(--border-radius-s);
+  border-top-right-radius: var(--border-radius-s);
   background-color: var(--color-white);
 }
 div.card > div.card-header > img {
-  border-top-left-radius: 15pt;
-  border-top-right-radius: 15pt;
+  border-top-left-radius: var(--border-radius-s);
+  border-top-right-radius: var(--border-radius-s);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -114,8 +118,8 @@ div.card > div.card-body {
   padding-left: 1rem;
   padding-right: 1rem;
   margin: 0;
-  border-bottom-left-radius: 15pt;
-  border-bottom-right-radius: 15pt;
+  border-bottom-left-radius: var(--border-radius-s);
+  border-bottom-right-radius: var(--border-radius-s);
 }
 div.card > div.card-body > p.product-category {
   margin: 0;
@@ -152,7 +156,7 @@ div.card > div.card-body > button.product-button {
   width: 100%;
   border: none;
   background: none;
-  border-radius: 5pt;
+  border-radius: var(--border-radius-s);
   padding: 0.5rem;
   margin-bottom: 1rem;
   font-weight: 700;
@@ -162,4 +166,8 @@ div.card > div.card-body > button.product-button {
 div.card > div.card-body > button.product-button > img.icon-cart {
   margin-right: 0.5rem;
   vertical-align: middle;
+}
+footer {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
