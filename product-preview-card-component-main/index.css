@@ -66,9 +66,9 @@ p {
   font-size: var(--font-size-p);
   color: var(--color-dark-grayish-blue);
 }
-* {
-  /* outline: 1px solid pink; */
-}
+/* * {
+  outline: 1px solid pink;
+} */
 html,
 body {
   font-family: var(--font-family-Montserrat);
