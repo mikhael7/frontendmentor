@@ -28,9 +28,9 @@
   </head>
   <body>
     <main role="main">
-      <section class="product-section" role="article">
-        <div class="card">
-          <div class="card-header">
+      <section class="product-section" aria-label="product section">
+        <div class="card" aria-label="product card">
+          <div class="card-header" aria-label="product header">
             <img
               src="./images/image-product-mobile.jpg"
               srcset="
@@ -41,20 +41,32 @@
       650px, 100vw"
               alt="image-product"
               width="100%"
+              aria-label="product image"
             />
           </div>
           <div class="card-body">
-            <p class="product-category">Perfume</p>
-            <h1 class="product-title">Gabrielle Essence Eau De Parfum</h1>
-            <p class="product-desc">
+            <p class="product-category" aria-label="perfume">Perfume</p>
+            <h1
+              class="product-title"
+              aria-label="Gabrielle Essence Eau De Parfum"
+            >
+              Gabrielle Essence Eau De Parfum
+            </h1>
+            <p
+              class="product-desc"
+              aria-label="A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL."
+            >
               A floral, solar and voluptuous interpretation composed by Olivier
               Polge, Perfumer-Creator for the House of CHANEL.
             </p>
             <div class="flex align-items-center">
-              <h1 class="product-price">$149.99</h1>
-              <p class="product-discount">$169.99</p>
+              <h1 class="product-price" aria-label="product price">$149.99</h1>
+              <p class="product-discount" aria-label="product discount">
+                $169.99
+              </p>
             </div>
-            <button class="product-button">
+            <button class="product-button" aria-label="add to cart">
               <img
                 src="./images/icon-cart.svg"
                 alt="icon-cart"
