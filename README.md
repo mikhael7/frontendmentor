@@ -12,7 +12,14 @@ This repository will be used for sharing all my completed **FREE** challenges on
 
 List of completed challenges ✅
 
-- News Homepage Main 📰
+### Difficulties
 
-[Link to Challenge](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl) |
+- ![junior](https://img.shields.io/badge/2-junior-green) News Homepage Main 📰 ([Challenge](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl))
+
 [Link to My Solution Deployment](https://news-homepage-main-5knyu64fg-mikhael7.vercel.app)
+
+## Credits
+
+Deployment powered by [Vercel](https://vercel.com/)
+
+Badges powered by [shields.io](https://shields.io/)
