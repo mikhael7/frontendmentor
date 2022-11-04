@@ -16,9 +16,7 @@ List of completed challenges ✅
 
 ![junior](https://img.shields.io/badge/2-JUNIOR-green)
 
-- News Homepage Main 📰 [Challenge Page](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl)
-
-[Link to My Solution Deployment](https://news-homepage-main-5knyu64fg-mikhael7.vercel.app)
+- News Homepage Main 📰 ( [Challenge Page](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl) )[Deploy Solution](https://news-homepage-main-5knyu64fg-mikhael7.vercel.app)
 
 ## Credits
 
