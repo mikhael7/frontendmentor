@@ -15,5 +15,4 @@ List of completed challenges ✅
 - News Homepage Main 📰
 
 [Link to Challenge](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl) |
-[Link to My Solution Deployment](https://news-homepage-main-5knyu64fg-mikhael7.vercel.app) |
-[Link to My Solution Repository](https://github.com/mikhael7/news-homepage-main)
+[Link to My Solution Deployment](https://news-homepage-main-5knyu64fg-mikhael7.vercel.app)
