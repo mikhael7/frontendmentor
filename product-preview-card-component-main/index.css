@@ -175,28 +175,28 @@ footer {
 }
 
 @media screen and (min-width: 376px) {
-  section.product-section {
+  main.product-section {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  section > div.card {
+  main > div.card {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: calc(100vw - 50vw);
     min-height: 50vh;
   }
-  section.product-section > div.card > div.card-header {
+  main.product-section > div.card > div.card-header {
     display: grid;
     border-bottom-left-radius: 0;
   }
-  section.product-section > div.card > div.card-header > img {
+  main.product-section > div.card > div.card-header > img {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: var(--border-radius-s);
   }
-  section.product-section > div.card > div.card-body {
+  main.product-section > div.card > div.card-body {
     border-top-right-radius: var(--border-radius-s);
     border-bottom-left-radius: 0;
     display: flex;
@@ -204,17 +204,17 @@ footer {
     justify-content: space-evenly;
     padding-left: 1.25rem;
   }
-  section.product-section > div.card > div.card-body > h1.product-title {
+  main.product-section > div.card > div.card-body > h1.product-title {
     line-height: 2.25rem;
     font-size: 32pt;
   }
-  section.product-section > div.card > div.card-body > p.product-desc {
+  main.product-section > div.card > div.card-body > p.product-desc {
     font-size: var(--font-size-s);
   }
-  section.product-section > div.card > div.card-body > button.product-button {
+  main.product-section > div.card > div.card-body > button.product-button {
     padding: 0.75rem;
   }
-  section.product-section
+  main.product-section
     > div.card
     > div.card-body
     > button.product-button:hover {
