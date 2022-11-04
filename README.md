@@ -1,5 +1,7 @@
 # Hi there ! 👋
 
+If you want to try yourself you can goto to [frontendmentor.io](https://www.frontendmentor.io), register or login to your account, pick a challenge, and start code and submit your code. Enjoy 😁
+
 ## About
 
 This repository will be used for sharing all my completed **FREE** challenges on frontendmentor 😎
