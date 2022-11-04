@@ -174,7 +174,7 @@ footer {
   margin-bottom: 1rem;
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 768px) {
   main.product-section {
     min-height: 32.5rem;
     display: flex;
