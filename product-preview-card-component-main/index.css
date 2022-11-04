@@ -112,6 +112,7 @@ div.card > div.card-header > img {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  max-width: 100%;
 }
 div.card > div.card-body {
   background-color: var(--color-white);
@@ -166,6 +167,7 @@ div.card > div.card-body > button.product-button {
 div.card > div.card-body > button.product-button > img.icon-cart {
   margin-right: 0.5rem;
   vertical-align: middle;
+  width: fit-content;
 }
 footer {
   margin-top: 1rem;
