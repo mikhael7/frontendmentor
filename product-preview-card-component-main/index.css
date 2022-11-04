@@ -109,10 +109,7 @@ div.card > div.card-header {
 div.card > div.card-header > img {
   border-top-left-radius: var(--border-radius-s);
   border-top-right-radius: var(--border-radius-s);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  max-width: 100%;
+  width: 100%;
 }
 div.card > div.card-body {
   background-color: var(--color-white);
