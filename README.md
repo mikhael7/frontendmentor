@@ -24,12 +24,12 @@ This repository will be used for sharing all my completed **FREE** challenges on
 ![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)
 | Name | Challenge Link | Solution | Level | Status |
 |---|---|---|---|---|
-|News Homepage Main 📰|[Link Challenge](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa)|[Link Deploy](https://product-preview-card-component-main-black.vercel.app/)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|🔨
+|Product Preview 💄|[Link Challenge](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa)|[Link Deploy](https://product-preview-card-component-main-black.vercel.app/)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|🔨
 
 ![junior](https://img.shields.io/badge/2-JUNIOR-green)
 | Name | Challenge Link | Solution | Level | Status |
 |---|---|---|---|---|
-|News Homepage Main 📰|[Challenge Link](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl)|[Deploy Solution](https://news-homepage-main-5knyu64fg-mikhael7.vercel.app)|![junior](https://img.shields.io/badge/2-JUNIOR-green)|✅
+|News Homepage 📰|[Challenge Link](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl)|[Deploy Solution](https://news-homepage-main-5knyu64fg-mikhael7.vercel.app)|![junior](https://img.shields.io/badge/2-JUNIOR-green)|✅
 
 ## Credits
 
