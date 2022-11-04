@@ -212,4 +212,11 @@ footer {
   section.product-section > div.card > div.card-body > button.product-button {
     padding: 0.75rem;
   }
+  section.product-section
+    > div.card
+    > div.card-body
+    > button.product-button:hover {
+    background-color: var(--color-very-dark-blue);
+    cursor: pointer;
+  }
 }
