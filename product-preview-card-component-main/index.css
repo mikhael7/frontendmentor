@@ -176,7 +176,7 @@ footer {
 
 @media screen and (min-width: 376px) {
   main.product-section {
-    min-height: 100vh;
+    min-height: 32.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -184,7 +184,8 @@ footer {
   main > div.card {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: calc(100vw - 50vw);
+    /* 👇 32.5rem is same as 100vw or 100vh */
+    max-width: 32.5rem;
   }
   main.product-section > div.card > div.card-header {
     display: grid;
