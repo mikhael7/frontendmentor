@@ -14,7 +14,7 @@ This repository will be used for sharing all my completed **FREE** challenges on
 
 ✅ : Completed
 
-🔨 : WIP
+🚧 : WIP
 
 ![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)
 ![junior](https://img.shields.io/badge/2-JUNIOR-green)
@@ -26,7 +26,7 @@ This repository will be used for sharing all my completed **FREE** challenges on
 ![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)
 | Name | Challenge Link | Solution | Level | Status |
 |---|---|---|---|---|
-|Product Preview 💄|[frontendmentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa)|[Vercel](https://product-preview-card-component-main-black.vercel.app/)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|🔨
+|Product Preview 💄|[frontendmentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa)|[Vercel](https://product-preview-card-component-main-black.vercel.app/)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|🚧
 
 ![junior](https://img.shields.io/badge/2-JUNIOR-green)
 | Name | Challenge Link | Solution | Level | Status |
