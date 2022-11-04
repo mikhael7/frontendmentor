@@ -176,7 +176,7 @@ footer {
 
 @media screen and (min-width: 376px) {
   main.product-section {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -185,7 +185,6 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: calc(100vw - 50vw);
-    min-height: 50vh;
   }
   main.product-section > div.card > div.card-header {
     display: grid;
