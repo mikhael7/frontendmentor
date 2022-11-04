@@ -1,6 +1,6 @@
 # Hi there ! 👋
 
-If you want to try yourself you can goto to [frontendmentor.io](https://www.frontendmentor.io), register or login to your account, pick a challenge, and start code and submit your code. Enjoy 😁
+If you want to try yourself you can goto to [frontendmentor.io](https://www.frontendmentor.io), register or login to your account, pick a challenge, start to code and submit your code. Enjoy 😁
 
 ## About
 
