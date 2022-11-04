@@ -19,7 +19,7 @@ This repository will be used for sharing all my completed **FREE** challenges on
 ![intermediate](https://img.shields.io/badge/3-INTERMEDIATE-yellow)
 ![advanced](https://img.shields.io/badge/4-ADVANCED-orange)
 
-### List of challenges
+### List of Challenges 🏃‍♂️
 
 ![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)
 | Name | Challenge Link | Solution | Level | Status |
