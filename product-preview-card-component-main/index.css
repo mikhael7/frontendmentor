@@ -73,6 +73,7 @@ html,
 body {
   font-family: var(--font-family-Montserrat);
   background-color: var(--color-cream);
+  max-height: 32.5rem;
 }
 
 /* #region Shared Component */
@@ -130,7 +131,7 @@ div.card > div.card-body > p.product-category {
 }
 div.card > div.card-body > h1.product-title {
   font-family: "Fraunces";
-  font-size: 24pt;
+  font-size: 1.5em;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -203,7 +204,7 @@ footer {
   }
   main.product-section > div.card > div.card-body > h1.product-title {
     line-height: 2.25rem;
-    font-size: 24pt;
+    font-size: 2em;
   }
   main.product-section > div.card > div.card-body > p.product-desc {
     font-size: var(--font-size-xs);
