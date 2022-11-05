@@ -27,6 +27,7 @@ This repository will be used for sharing all my completed **FREE** challenges on
 | Name | Link | Level | Status | Tech Stack |
 |---|---|---|---|---|
 |Product Preview 💄|[frontendmentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|✅|HTML CSS
+|Interactive Rating ⭐️|[frontendmentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|🚧|HTML CSS JS
 
 ![junior](https://img.shields.io/badge/2-JUNIOR-green)
 | Name | Link | Level | Status | Tech Stack |
