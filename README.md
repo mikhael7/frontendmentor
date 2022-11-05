@@ -48,8 +48,6 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
 
 ### What I learned
 
@@ -123,6 +121,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 ## Author
 
 - Frontend Mentor - [@mikhael7](https://www.frontendmentor.io/profile/@mikhael7)
+- Github - [@mikhael7](https://github.com/mikhael7)
 
 ## Acknowledgments
 
