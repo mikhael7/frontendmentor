@@ -203,10 +203,11 @@ footer {
   }
   main.product-section > div.card > div.card-body > h1.product-title {
     line-height: 2.25rem;
-    font-size: 32pt;
+    font-size: 24pt;
   }
   main.product-section > div.card > div.card-body > p.product-desc {
-    font-size: var(--font-size-s);
+    font-size: var(--font-size-xs);
+    margin-top: 1rem;
   }
   main.product-section > div.card > div.card-body > button.product-button {
     padding: 0.75rem;
