@@ -66,6 +66,8 @@ body {
   background: linear-gradient(to top, hsl(218deg 25% 13%), hsl(217deg 19% 16%));
 }
 /* #endregion shared component */
+
+/* #region rating classes */
 main > div.card {
   margin: 1rem;
   padding: 1rem;
@@ -139,3 +141,8 @@ main > div.card > div.card-body > button#btn-submit:hover {
   background-color: var(--color-white);
   cursor: pointer;
 }
+/* #endregion rating classes */
+
+/* #region thank you classes */
+
+/* #endregion thank you classes */

@@ -30,43 +30,59 @@
     <!-- Rating state start -->
     <main>
       <div class="card flex flex-column gradient">
-        <div class="card-title">
-          <img
-            src="./images/icon-star.svg"
-            alt="star"
-            aria-label="icon-star"
-            class="star"
-          />
-          <h1>How did we do?</h1>
+        <div id="rating-card" hidden>
+          <div class="card-title">
+            <img
+              src="./images/icon-star.svg"
+              alt="star"
+              aria-label="icon-star"
+              class="star"
+            />
+            <h1>How did we do?</h1>
+          </div>
+          <div class="card-body">
+            <p class="card-desc">
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
+            <div class="rating">
+              <ul class="flex text-center rating-list">
+                <li value="1" class="rating-number">1</li>
+                <li value="2" class="rating-number">2</li>
+                <li value="3" class="rating-number">3</li>
+                <li value="4" class="rating-number">4</li>
+                <li value="5" class="rating-number">5</li>
+              </ul>
+            </div>
+          </div>
+          <button id="btn-submit" type="button" class="card-button">
+            Submit
+          </button>
         </div>
-        <div class="card-body">
-          <p class="card-desc">
-            Please let us know how we did with your support request. All
-            feedback is appreciated to help us improve our offering!
-          </p>
-          <div class="rating">
-            <ul class="flex text-center rating-list">
-              <li value="1" class="rating-number">1</li>
-              <li value="2" class="rating-number">2</li>
-              <li value="3" class="rating-number">3</li>
-              <li value="4" class="rating-number">4</li>
-              <li value="5" class="rating-number">5</li>
-            </ul>
+        <div id="thank-you-card flex">
+          <div class="card-header">
+            <img
+              src="./images/illustration-thank-you.svg"
+              alt="star"
+              aria-label="icon-star"
+              class="star"
+            />
+            <p class="thank-you-badge">
+              You selected <span id="selected-rating"></span> out of 5
+            </p>
+            <div class="card-title"></div>
+          </div>
         </div>
-        <button id="btn-submit"type="button" class="card-button">Submit</button>
       </div>
     </main>
-
-    <!-- Rating state end -->
-
     <!-- Thank you state start -->
 
-    You selected
     <!-- Add rating here -->
     out of 5 Thank you! We appreciate you taking the time to give a rating. If
     you ever need more support, don’t hesitate to get in touch!
-
     <!-- Thank you state end -->
+
+    <!-- Rating state end -->
 
     <div class="attribution">
       Challenge by
