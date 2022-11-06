@@ -36,14 +36,15 @@ body {
   font-size: var(--font-size-default);
   background: var(--color-very-dark-blue);
   color: var(--color-white);
-  max-width: 32.5rem;
-  max-height: 32.5rem;
 }
 * {
   outline: 1px solid pink;
 }
 
 /* #region shared component */
+.hidden {
+  display: none !important;
+}
 .flex {
   display: flex;
 }
@@ -59,6 +60,9 @@ body {
 .justify-items-center {
   justify-items: center;
 }
+.align-items-center {
+  align-items: center;
+}
 .text-center {
   text-align: center;
 }
@@ -68,32 +72,41 @@ body {
 /* #endregion shared component */
 
 /* #region rating classes */
+main {
+  min-height: 32.5rem;
+}
 main > div.card {
-  margin: 1rem;
+  max-width: calc(32.5rem / 1.75);
   padding: 1rem;
   border-radius: 1em;
 }
-main > div.card > div.card-title > img.star {
+main > div.card > div#rating-card > div.card-title > img.star {
   border-radius: 100%;
   width: "content-fit";
   background-color: var(--color-dark-blue);
   padding: 0.5em;
 }
-main > div.card > div.card-title > h1 {
+main > div.card > div#rating-card > div.card-title > h1 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
-main > div.card > div.card-body > p.card-desc {
+main > div.card > div#rating-card > div.card-body > p.card-desc {
   margin-top: 0.5rem;
   color: var(--color-light-grey);
   font-size: var(--font-size-s);
 }
-main > div.card > div.card-body > div.rating > ul.rating-list {
+main
+  > div.card
+  > div#rating-card
+  > div.card-body
+  > div.rating
+  > ul.rating-list {
   justify-content: space-between;
   padding: 0;
 }
 main
   > div.card
+  > div#rating-card
   > div.card-body
   > div.rating
   > ul.rating-list
@@ -108,6 +121,7 @@ main
 }
 main
   > div.card
+  > div#rating-card
   > div.card-body
   > div.rating
   > ul.rating-list
@@ -118,6 +132,7 @@ main
 }
 main
   > div.card
+  > div#rating-card
   > div.card-body
   > div.rating
   > ul.rating-list
@@ -125,7 +140,7 @@ main
   background-color: var(--color-light-grey);
   color: var(--color-white);
 }
-main > div.card > div.card-body > button#btn-submit {
+main > div.card > div#rating-card > button#btn-submit {
   background: none;
   border: none;
   background-color: var(--color-primary-orange);
@@ -136,7 +151,7 @@ main > div.card > div.card-body > button#btn-submit {
   border-radius: 1.5rem;
   width: 100%;
 }
-main > div.card > div.card-body > button#btn-submit:hover {
+main > div.card > div#rating-card > button#btn-submit:hover {
   color: var(--color-primary-orange);
   background-color: var(--color-white);
   cursor: pointer;
@@ -144,5 +159,26 @@ main > div.card > div.card-body > button#btn-submit:hover {
 /* #endregion rating classes */
 
 /* #region thank you classes */
-
+main > div.card > div#thank-you-card > div.card-header > p.thank-you-badge {
+  background-color: var(--color-dark-blue);
+  color: var(--color-primary-orange);
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+main > div.card > div#thank-you-card > div.card-body > div.card-desc > p {
+  margin-top: 0rem;
+  color: var(--color-medium-grey);
+}
 /* #endregion thank you classes */
+footer {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    min-width: 32.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
