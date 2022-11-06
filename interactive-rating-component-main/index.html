@@ -27,10 +27,10 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <!-- Rating state start -->
-    <main>
+    <main class="flex justify-content-center align-items-center">
       <div class="card flex flex-column gradient">
-        <div id="rating-card" hidden>
+        <!-- Rating state start -->
+        <div id="rating-card">
           <div class="card-title">
             <img
               src="./images/icon-star.svg"
@@ -59,7 +59,12 @@
             Submit
           </button>
         </div>
-        <div id="thank-you-card flex">
+        <!-- Rating state end -->
+        <!-- Thank you state start -->
+        <div
+          id="thank-you-card"
+          class="flex flex-column justify-content-center text-center align-items-center hidden"
+        >
           <div class="card-header">
             <img
               src="./images/illustration-thank-you.svg"
@@ -67,29 +72,33 @@
               aria-label="icon-star"
               class="star"
             />
+            <!-- Add rating here -->
             <p class="thank-you-badge">
               You selected <span id="selected-rating"></span> out of 5
             </p>
-            <div class="card-title"></div>
+            <div class="card-title"><h1>Thank you!</h1></div>
+          </div>
+          <div class="card-body">
+            <div class="card-desc">
+              <p>
+                We appreciate you taking the time to give a rating. If you ever
+                need more support, don’t hesitate to get in touch!
+              </p>
+            </div>
           </div>
         </div>
+        <!-- Thank you state end -->
       </div>
     </main>
-    <!-- Thank you state start -->
 
-    <!-- Add rating here -->
-    out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch!
-    <!-- Thank you state end -->
-
-    <!-- Rating state end -->
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/mikhael7">Mikhael</a>.
+      </div>
+    </footer>
   </body>
   <script defer src="./script.js"></script>
 </html>
