@@ -69,7 +69,6 @@ body {
 .gradient {
   background: linear-gradient(to top, hsl(218deg 25% 13%), hsl(217deg 19% 16%));
 }
-
 /* #endregion shared component */
 
 /* #region rating classes */
@@ -96,41 +95,37 @@ main > div.card > div#rating-card > div.card-body > p.card-desc {
   color: var(--color-light-grey);
   font-size: var(--font-size-s);
 }
-main > div.card > div#rating-card > div.card-body > div.rating {
+main
+  > div.card
+  > div#rating-card
+  > div.card-body
+  > div.rating
+  > ul.rating-list {
   justify-content: space-between;
   padding: 0;
-  margin-bottom: 1rem;
 }
 main
   > div.card
   > div#rating-card
   > div.card-body
   > div.rating
-  > div.rating-rounded {
+  > ul.rating-list
+  > li.rating-number {
+  display: inline;
   color: var(--color-light-grey);
   background-color: var(--color-dark-blue);
   border-radius: 100%;
-  width: 3rem;
-  height: 3rem;
+  padding: 1rem;
+  width: 1em;
+  height: 1em;
 }
-
 main
   > div.card
   > div#rating-card
   > div.card-body
   > div.rating
-  > div.rating-rounded
-  :active {
-  background-color: var(--color-light-grey);
-  color: var(--color-white);
-}
-
-main
-  > div.card
-  > div#rating-card
-  > div.card-body
-  > div.rating
-  > div.rating-rounded:hover {
+  > ul.rating-list
+  > li.rating-number:hover {
   color: var(--color-white);
   background-color: var(--color-primary-orange);
   cursor: pointer;
@@ -140,18 +135,8 @@ main
   > div#rating-card
   > div.card-body
   > div.rating
-  > div.rating-rounded
-  > input {
-  width: 3rem;
-  height: 3rem;
-}
-main
-  > div.card
-  > div#rating-card
-  > div.card-body
-  > div.rating
-  > div.rating-rounded
-  > input:checked {
+  > ul.rating-list
+  > li.rating-number:active {
   background-color: var(--color-light-grey);
   color: var(--color-white);
 }
@@ -185,7 +170,6 @@ main > div.card > div#thank-you-card > div.card-body > div.card-desc > p {
   color: var(--color-medium-grey);
 }
 /* #endregion thank you classes */
-
 footer {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -197,4 +181,9 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+input[class="rating-checkbox"]:checked {
+  background-color: var(--color-light-grey);
+  color: var(--color-white);
 }
