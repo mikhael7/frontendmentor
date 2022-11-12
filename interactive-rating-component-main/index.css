@@ -37,9 +37,9 @@ body {
   background: var(--color-very-dark-blue);
   color: var(--color-white);
 }
-* {
+/* * {
   outline: 1px solid pink;
-}
+} */
 
 /* #region shared component */
 .hidden {
