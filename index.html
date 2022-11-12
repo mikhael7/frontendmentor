@@ -27,9 +27,9 @@
 
 <body>
   <main class="flex justify-content-center align-items-center">
-    <div class="card flex flex-column gradient">
+    <div class="flex card flex-column gradient">
       <!-- Rating state start -->
-      <div id="rating-card" class="">
+      <div id="rating-card">
         <div class="card-title">
           <img src="./images/icon-star.svg" alt="star" aria-label="icon-star" class="star" />
           <h1>How did we do?</h1>
@@ -39,53 +39,53 @@
             Please let us know how we did with your support request. All
             feedback is appreciated to help us improve our offering!
           </p>
-          <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_star_rating -->
-          <!--  TODO: 👇 changed it to div and when its clicked  -->
-          <div id="rating-list" class="rating flex">
-            <div class="rating-rounded flex align-items-center justify-content-center">
-              <input type="radio" name="rating" id="1" /><label for="1">1</label>
+          <div id="rating-list" class="flex rating">
+            <div class="flex rating-rounded align-items-center justify-content-center">
+              <input type="radio" class="radio-rating" name="rating" id="1" value="1" hidden /><label for="1">1</label>
             </div>
-            <div class="rating-rounded flex align-items-center justify-content-center">
-              <input type="radio" name="rating" id="2" hidden /><label for="2">2</label>
+            <div class="flex rating-rounded align-items-center justify-content-center">
+              <input type="radio" class="radio-rating" name="rating" id="2" value="2" hidden /><label for="2">2</label>
             </div>
-            <div class="rating-rounded flex align-items-center justify-content-center">
-              <input type="radio" name="rating" id="3" hidden /><label for="3">3</label>
+            <div class="flex rating-rounded align-items-center justify-content-center">
+              <input type="radio" class="radio-rating" name="rating" id="3" value="3" hidden /><label for="3">3</label>
             </div>
-            <div class="rating-rounded flex align-items-center justify-content-center">
-              <input type="radio" name="rating" id="4" hidden /><label for="4">4</label>
+            <div class="flex rating-rounded align-items-center justify-content-center">
+              <input type="radio" class="radio-rating" name="rating" id="4" value="4" hidden /><label for="4">4</label>
             </div>
-            <div class="rating-rounded flex align-items-center justify-content-center">
-              <input type="radio" name="rating" id="5" hidden /><label for="5">5</label>
+            <div class="flex rating-rounded align-items-center justify-content-center">
+              <input type="radio" class="radio-rating" name="rating" id="5" value="5" hidden /><label for="5">5</label>
             </div>
           </div>
           <button id="btn-submit" type="button" class="card-button">
             Submit
           </button>
         </div>
-        <!-- Rating state end -->
-        <!-- Thank you state start -->
-        <div id="thank-you-card" class="flex flex-column justify-content-center text-center align-items-center hidden">
-          <div class="card-header">
-            <img src="./images/illustration-thank-you.svg" alt="star" aria-label="icon-star" class="star" />
-            <!-- Add rating here -->
-            <p class="thank-you-badge">
-              You selected <span id="selected-rating"></span> out of 5
-            </p>
-            <div class="card-title">
-              <h1>Thank you!</h1>
-            </div>
-          </div>
-          <div class="card-body">
-            <div class="card-desc">
-              <p>
-                We appreciate you taking the time to give a rating. If you ever
-                need more support, don’t hesitate to get in touch!
-              </p>
-            </div>
+      </div>
+      <!-- Rating state end -->
+      <!-- Thank you state start -->
+      <div id="thank-you-card"
+        class="flex hidden text-center flex-column justify-content-center align-items-center">
+        <div class="card-header">
+          <img src="./images/illustration-thank-you.svg" alt="star" aria-label="icon-star" class="star" />
+          <!-- Add rating here -->
+          <p class="thank-you-badge">
+            You selected <span id="selected-rating"></span> out of 5
+          </p>
+          <div class="card-title">
+            <h1>Thank you!</h1>
           </div>
         </div>
-        <!-- Thank you state end -->
+        <div class="card-body">
+          <div class="card-desc">
+            <p>
+              We appreciate you taking the time to give a rating. If you ever
+              need more support, don’t hesitate to get in touch!
+            </p>
+          </div>
+        </div>
       </div>
+      <!-- Thank you state end -->
+    </div>
   </main>
 
   <footer>

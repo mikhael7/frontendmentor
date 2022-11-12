@@ -69,6 +69,10 @@ body {
 .gradient {
   background: linear-gradient(to top, hsl(218deg 25% 13%), hsl(217deg 19% 16%));
 }
+.isChecked {
+  background: var(--color-light-grey) !important;
+  color: var(--color-white) !important;
+}
 
 /* #endregion shared component */
 
@@ -119,22 +123,12 @@ main
   > div#rating-card
   > div.card-body
   > div.rating
-  > div.rating-rounded
-  :active {
-  background-color: var(--color-light-grey);
-  color: var(--color-white);
-}
-
-main
-  > div.card
-  > div#rating-card
-  > div.card-body
-  > div.rating
   > div.rating-rounded:hover {
   color: var(--color-white);
   background-color: var(--color-primary-orange);
   cursor: pointer;
 }
+
 main
   > div.card
   > div#rating-card
@@ -145,17 +139,7 @@ main
   width: 3rem;
   height: 3rem;
 }
-main
-  > div.card
-  > div#rating-card
-  > div.card-body
-  > div.rating
-  > div.rating-rounded
-  > input:checked {
-  background-color: var(--color-light-grey);
-  color: var(--color-white);
-}
-main > div.card > div#rating-card > button#btn-submit {
+main > div.card > div#rating-card > div.card-body > button#btn-submit {
   background: none;
   border: none;
   background-color: var(--color-primary-orange);
@@ -166,7 +150,7 @@ main > div.card > div#rating-card > button#btn-submit {
   border-radius: 1.5rem;
   width: 100%;
 }
-main > div.card > div#rating-card > button#btn-submit:hover {
+main > div.card > div#rating-card > div.card-body > button#btn-submit:hover {
   color: var(--color-primary-orange);
   background-color: var(--color-white);
   cursor: pointer;
