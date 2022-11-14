@@ -1,31 +1,30 @@
 /* Monserrat wght */
 @font-face {
   font-family: "Montserrat";
-  src: url("./fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
-    format("truetype-variations");
+  src: url("./fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype-variations");
   font-weight: 125 950;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Montserrat";
-  src: url("./fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf")
-    format("truetype-variations");
+  src: url("./fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype-variations");
   font-weight: 125 950;
   font-stretch: 75% 125%;
   font-style: italic;
 }
+
 /* Fraunces SOFT WONK opsz wght */
 @font-face {
   font-family: "Fraunces";
-  src: url("./fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")
-    format("truetype-variations");
+  src: url("./fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf") format("truetype-variations");
   font-weight: 125 950;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Fraunces";
-  src: url("./fonts/Fraunces/Fraunces-Italic-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")
-    format("truetype-variations");
+  src: url("./fonts/Fraunces/Fraunces-Italic-VariableFont_SOFT\,WONK\,opsz\,wght.ttf") format("truetype-variations");
   font-weight: 125 950;
   font-stretch: 75% 125%;
   font-style: italic;
@@ -65,9 +64,10 @@ p {
   font-size: var(--font-size-p);
   color: var(--color-dark-grayish-blue);
 }
-* {
-  /* outline: 1px solid pink; */
-}
+
+/* * {
+  outline: 1px solid pink;
+} */
 html,
 body {
   font-family: var(--font-family-Montserrat);
@@ -79,39 +79,48 @@ body {
 .flex {
   display: flex;
 }
+
 .justify-center {
   justify-content: center;
 }
+
 .align-items-center {
   align-items: center;
 }
+
 .flex-row {
   flex-direction: row;
 }
+
 .flex-column {
   flex-direction: column;
 }
+
 .grid {
   display: grid;
 }
+
 /* #endregion Shared Component */
 
 div.card {
   border-radius: var(--border-radius-s);
 }
-div.card > div.card-header {
+
+div.card>div.card-header {
   margin: 0;
   padding: 0;
   border-top-left-radius: var(--border-radius-s);
   border-top-right-radius: var(--border-radius-s);
   background-color: var(--color-white);
 }
-div.card > div.card-header > img {
+
+div.card>div.card-header>img {
   border-top-left-radius: var(--border-radius-s);
   border-top-right-radius: var(--border-radius-s);
   width: 100%;
 }
-div.card > div.card-body {
+
+div.card>div.card-body {
   background-color: var(--color-white);
   padding-left: 1rem;
   padding-right: 1rem;
@@ -119,7 +128,8 @@ div.card > div.card-body {
   border-bottom-left-radius: var(--border-radius-s);
   border-bottom-right-radius: var(--border-radius-s);
 }
-div.card > div.card-body > p.product-category {
+
+div.card>div.card-body>p.product-category {
   margin: 0;
   padding-top: 1rem;
   padding-bottom: 0.5rem;
@@ -128,29 +138,34 @@ div.card > div.card-body > p.product-category {
   font-variation-settings: "wght" 600;
   color: var(--color-dark-grayish-blue);
 }
-div.card > div.card-body > h1.product-title {
+
+div.card>div.card-body>h1.product-title {
   font-family: "Fraunces";
   font-size: var(--font-size-m);
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
-div.card > div.card-body > p.product-desc {
+
+div.card>div.card-body>p.product-desc {
   font-variation-settings: "wght" 500;
   letter-spacing: 0.5pt;
   margin-bottom: 0.5rem;
   color: var(--color-dark-grayish-blue);
 }
-div.card > div.card-body > div.flex > h1.product-price {
+
+div.card>div.card-body>div.flex>h1.product-price {
   font-family: "Fraunces";
   color: var(--color-dark-cyan);
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
-div.card > div.card-body > div.flex > p.product-discount {
+
+div.card>div.card-body>div.flex>p.product-discount {
   text-decoration: line-through;
   margin-left: 1rem;
 }
-div.card > div.card-body > button.product-button {
+
+div.card>div.card-body>button.product-button {
   width: 100%;
   border: none;
   background: none;
@@ -161,11 +176,13 @@ div.card > div.card-body > button.product-button {
   color: var(--color-white);
   background-color: var(--color-dark-cyan);
 }
-div.card > div.card-body > button.product-button > img.icon-cart {
+
+div.card>div.card-body>button.product-button>img.icon-cart {
   margin-right: 0.5rem;
   vertical-align: middle;
   width: fit-content;
 }
+
 footer {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -178,22 +195,26 @@ footer {
     align-items: center;
     justify-content: center;
   }
-  main > div.card {
+
+  main>div.card {
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* 👇 32.5rem is same as 100vw or 100vh */
     max-width: 32.5rem;
   }
-  main.product-section > div.card > div.card-header {
+
+  main.product-section>div.card>div.card-header {
     display: grid;
     border-bottom-left-radius: 0;
   }
-  main.product-section > div.card > div.card-header > img {
+
+  main.product-section>div.card>div.card-header>img {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: var(--border-radius-s);
   }
-  main.product-section > div.card > div.card-body {
+
+  main.product-section>div.card>div.card-body {
     border-top-right-radius: var(--border-radius-s);
     border-bottom-left-radius: 0;
     display: flex;
@@ -201,21 +222,22 @@ footer {
     justify-content: space-evenly;
     padding-left: 1.25rem;
   }
-  main.product-section > div.card > div.card-body > h1.product-title {
+
+  main.product-section>div.card>div.card-body>h1.product-title {
     line-height: 2.25rem;
     font-size: var(--font-size-xl);
   }
-  main.product-section > div.card > div.card-body > p.product-desc {
+
+  main.product-section>div.card>div.card-body>p.product-desc {
     font-size: var(--font-size-sm);
     margin-top: 0.5rem;
   }
-  main.product-section > div.card > div.card-body > button.product-button {
+
+  main.product-section>div.card>div.card-body>button.product-button {
     padding: 0.75rem;
   }
-  main.product-section
-    > div.card
-    > div.card-body
-    > button.product-button:hover {
+
+  main.product-section>div.card>div.card-body>button.product-button:hover {
     background-color: var(--color-very-dark-blue);
     cursor: pointer;
   }
