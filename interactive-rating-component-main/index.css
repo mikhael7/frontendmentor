@@ -1,12 +1,12 @@
 @font-face {
-  font-family: "Overpass",Arial, Helvetica, sans-serif;
+  font-family: "Overpass";
   src: url("./font/Overpass/Overpass-VariableFont_wght.ttf")
     format("truetype-variations");
   font-weight: 125 950;
   font-style: normal;
 }
 @font-face {
-  font-family: "Overpass",Arial, Helvetica, sans-serif;
+  font-family: "Overpass";
   src: url("./font/Overpass/Overpass-Italic-VariableFont_wght.ttf")
     format("truetype-variations");
   font-weight: 125 950;
@@ -32,7 +32,7 @@
 }
 html,
 body {
-  font-family: "Overpass";
+  font-family: "Overpass",Arial, Helvetica, sans-serif;
   font-size: var(--font-size-default);
   background: var(--color-very-dark-blue);
   color: var(--color-white);
