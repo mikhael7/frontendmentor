@@ -140,7 +140,7 @@ div.card>div.card-body>p.product-category {
 }
 
 div.card>div.card-body>h1.product-title {
-  font-family: "Fraunces";
+  font-family: "Fraunces",Arial, Helvetica, sans-serif;
   font-size: var(--font-size-m);
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -154,7 +154,7 @@ div.card>div.card-body>p.product-desc {
 }
 
 div.card>div.card-body>div.flex>h1.product-price {
-  font-family: "Fraunces";
+  font-family: "Fraunces", Arial, Helvetica, sans-serif;
   color: var(--color-dark-cyan);
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
