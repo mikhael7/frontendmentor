@@ -1,0 +1,24 @@
+:root {
+    --color-white: hsl(0, 0%, 100%);
+    --color-light-gray: hsl(212, 45%, 89%);
+    --color-grayish-blue: hsl(220, 15%, 55%);
+    --color-dark-blue: hsl(218, 44%, 22%);
+
+    --font-size-default: 15px;
+    --font-weight-default: 500;
+
+    --font-size-xs: 0.25em;
+    --font-size-s: 0.5em;
+    --font-size-m: 1em;
+    --font-size-l: 1.5em;
+    --font-size-xl: 2em;
+
+    --font-weight-light: 400;
+    --font-weight-bold: 700;
+}
+
+html,
+body {
+    font-size: var(--font-size-default);
+    font-weight: var(--font-weight-default);
+}
