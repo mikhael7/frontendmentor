@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Outfit";
+    src: url("./fonts/Outfit/Outfit-VariableFont_wght.ttf") format("truetype-variations");
+    font-weight: 125 950;
+    font-style: normal;
+}
+
 :root {
     --color-white: hsl(0, 0%, 100%);
     --color-light-gray: hsl(212, 45%, 89%);
@@ -15,10 +22,51 @@
 
     --font-weight-light: 400;
     --font-weight-bold: 700;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 html,
 body {
+    font-family: "Outfit", Arial, Helvetica, sans-serif;
     font-size: var(--font-size-default);
     font-weight: var(--font-weight-default);
+    background-color: var(--color-light-gray);
+}
+
+body>main>article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body>main>article>div.card {
+    text-align: center;
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    max-width: 32.5rem;
+    max-height: 32.5rem;
+    padding: 1rem;
+}
+
+body>main>article>div.card>img {
+    object-fit: contain;
+    border-radius: 1rem;
+    max-width: 100%;
+}
+
+body>main>article>div.card>p {
+    color: var(--color-grayish-blue)
+}
+
+footer {
+    margin-top: 2rem
+}
+
+@media screen and (min-width: 768px) {
+    body>main>article>div.card {
+        max-width: calc(32.5rem / 2);
+
+    }
 }
