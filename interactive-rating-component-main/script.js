@@ -7,18 +7,6 @@ const ratingContainer = document.getElementById("rating-card");
 
 // reference https://github.com/Alekususenpai/interactive-rating-component/blob/master/app.js
 
-// for (let i = 0; i < ratingNum.length; i++) {
-//   ratingNum[i].addEventListener("click", (item) => {
-// 👇 if you want to get the value of the rating
-// console.log("item", item.target.firstElementChild.value);
-//     for (let i = 0; i < ratingNum.length; i++) {
-//       ratingNum[i].classList.contains("isChecked");
-//       ratingNum[i].classList.remove("isChecked");
-//     }
-//     ratingNum[i].classList.add("isChecked");
-//   });
-// }
-
 for (let val of ratingNum.length) {
   val.addEventListener("click", (item) => {
     for (let val1 of ratingNum.length) {
