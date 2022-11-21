@@ -19,9 +19,9 @@ const ratingContainer = document.getElementById("rating-card");
 //   });
 // }
 
-for (val of ratingNum.length) {
+for (let val of ratingNum.length) {
   val.addEventListener("click", (item) => {
-    for (val1 of ratingNum.length) {
+    for (let val1 of ratingNum.length) {
       val1.classList.contains("isChecked");
       val1.classList.remove("isChecked");
     }
