@@ -101,6 +101,7 @@ main>article>div.card>div.card-desc>div.price>div.crypt-time>span {
     vertical-align: middle;
 }
 
+/* avatar plugins */
 main>article>div.card>div.card-footer {
     border-top: 1px solid var(--color-line);
     margin-top: 1rem;
