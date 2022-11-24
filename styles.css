@@ -48,15 +48,21 @@ body {
     font-size: var(--font-size-p);
     background-color: var(--color-main-bg);
     color: var(--color-white);
+
+    /* centering card component */
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
 }
 
 footer {
     margin-top: 2rem;
 }
 
-main>article {
-    justify-content: center;
-}
 
 main>article>div.card {
     background-color: var(--color-card-bg);
