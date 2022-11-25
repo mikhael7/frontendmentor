@@ -52,18 +52,21 @@ To see how you can add code snippets, see below:
 
 ```html
 <div class="card">
-  <img src="./images/image-qr-code.png" alt="qr-code">
+  <img src="./images/image-qr-code.png" alt="qr-code" />
   <h1>Improve your front-end skills by building projects</h1>
-  <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  <p>
+    Scan the QR code to visit Frontend Mentor and take your coding skills to the
+    next level
+  </p>
 </div>
 ```
 
 ```css
 @font-face {
-    font-family: "Outfit";
-    src: url("./fonts/Outfit/Outfit-VariableFont_wght.ttf") format("truetype-variations");
-    font-weight: 125 950;
-    font-style: normal;
+  font-family: "Outfit";
+  src: url("./fonts/Outfit/Outfit-VariableFont_wght.ttf") format("truetype-variations");
+  font-weight: 125 950;
+  font-style: normal;
 }
 ```
 
