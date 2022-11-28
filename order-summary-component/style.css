@@ -1,0 +1,21 @@
+:root {
+    /* color pallete */
+    --color-pale-blue: hsl(225, 100%, 94%);
+    --color-bright-blue: hsl(245, 75%, 52%);
+    --color-very-pale-blue: hsl(225, 100%, 98%);
+    --color-desaturate-blue: hsl(224, 23%, 55%);
+    --color-dark-blue: hsl(223, 47%, 23%);
+
+    /* Font */
+    --font-size-default: 16px;
+    --font-size-s: 0.5rem;
+    --font-size-m: 1 rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+
+    --font-weight-light: 300;
+    --font-weight-default: 500;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 900;
+
+}

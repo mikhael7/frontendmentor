@@ -72,7 +72,31 @@ main>article>div.card {
     max-width: calc(32.5rem / 2);
 }
 
-main>article>div.card>div.card-image>img {
+main>article>div.card>div.card-image {
+    position: relative;
+    max-width: 100%;
+}
+
+main>article>div.card>div.card-image>img.view-image {
+    position: absolute;
+    object-fit: contain;
+    opacity: 1;
+    transition: opacity .1s;
+
+    vertical-align: middle;
+}
+
+main>article>div.card>div.card-image:hover img.view-image {
+    opacity: 1;
+    z-index: 1;
+}
+
+main>article>div.card>div.card-image:hover img.equi-image {
+    opacity: .5;
+}
+
+main>article>div.card>div.card-image>img.equi-image {
+    display: block;
     border-radius: var(--border-radius-m);
     object-fit: contain;
     width: 100%;
