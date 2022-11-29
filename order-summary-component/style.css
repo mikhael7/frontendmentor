@@ -40,6 +40,7 @@ body {
     font-weight: var(--font-weight-default);
     background-color: var(--color-pale-blue);
     background-image: url('./images/pattern-background-mobile.svg');
+    background-size: contain;
     margin: 0;
     padding: 0;
 }
