@@ -75,6 +75,7 @@ main>article>div.card {
 main>article>div.card>div.card-image {
     position: relative;
     max-width: 100%;
+    cursor: pointer;
 }
 
 /* centering with absolute */
@@ -110,6 +111,11 @@ main>article>div.card>div.card-image>img.equi-image {
     border-radius: var(--border-radius-m);
     object-fit: contain;
     width: 100%;
+}
+
+main>article>div.card>div.card-desc>h1:hover {
+    color: var(--color-cyan);
+    cursor: pointer;
 }
 
 main>article>div.card>div.card-desc>p {
@@ -166,6 +172,11 @@ main>article>div.card>div.card-footer>span {
     grid-row: 1;
 }
 
-main>article>div.card>div.card-footer>span>span {
-    color: var(--color-soft-blue)
+main>article>div.card>div.card-footer>span>span.creator {
+    color: var(--color-soft-blue);
+}
+
+main>article>div.card>div.card-footer>span>span.creator-name:hover {
+    color: var(--color-cyan);
+    cursor: pointer;
 }
