@@ -38,7 +38,6 @@
     --border-radius-s: 5pt;
     --border-radius-m: 10pt;
     --border-radius-l: 15pt;
-    -webkit-font-smoothing: antialiased;
 }
 
 * {
