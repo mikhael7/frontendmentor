@@ -1,44 +1,84 @@
-# Hi ! 👋
+# Frontend Mentor - Stats preview card component solution
 
-If you want to try yourself you can goto to [frontendmentor.io](https://www.frontendmentor.io), register or login to your account, pick a challenge, start to code and submit your code. Enjoy 😁
+This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## About
+## Table of contents
 
-This repository will be used for sharing all my completed **FREE** challenges on frontendmentor 😎
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-📚 [frontendmentor Homepage](https://www.frontendmentor.io)
+## Overview
 
-👨🏻‍💻 [My frontendmentor Profile](https://www.frontendmentor.io/profile/mikhael7)
+### The challenge
 
-## Challenges 🏆
+Users should be able to:
 
-✅ - Completed
+### Screenshot
 
-🚧 - WIP
+![screenshot](./screenshot.png)
 
-![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)
-![junior](https://img.shields.io/badge/2-JUNIOR-green)
-![intermediate](https://img.shields.io/badge/3-INTERMEDIATE-yellow)
-![advanced](https://img.shields.io/badge/4-ADVANCED-orange)
+Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
-### List of Challenges 🏃‍♂️
+Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
 
-![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)
-| Name | Link | Level | Status | Tech Stack |
-|---|---|---|---|---|
-|Product Preview 💄|[frontendmentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|✅|HTML CSS
-|Interactive Rating ⭐️|[frontendmentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|✅|HTML CSS JS
-|QR code|[frontendmentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H/hub/qr-code-component-E6mM34t181)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|✅|HTML CSS
-|NFT Card|[frontendmentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U/hub/nft-preview-card-component-euE6z0lYQv)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|✅|HTML CSS
-|Order Summary|[frontendmentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj/hub/order-summary-component-dt8X6d8MuB)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|🚧|HTML CSS
+Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
-![junior](https://img.shields.io/badge/2-JUNIOR-green)
-| Name | Link | Level | Status | Tech Stack |
-|---|---|---|---|---|
-|News Homepage 📰|[frontendmentor](https://www.frontendmentor.io/solutions/newshomepagemain-ZBUX_ExBCH)|![junior](https://img.shields.io/badge/2-JUNIOR-green)|✅| HTML CSS JS
+### Links
 
-## Credits
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62/hub/stats-preview-card-component-d7ZkT4W2BQ)
+- Live Site URL: [Live site URL here](https://stats-preview-card-component-mikhael7.vercel.app/)
 
-Deployment powered by [Vercel](https://vercel.com/)
+## My process
 
-Badges powered by [shields.io](https://shields.io/)
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+
+### What I learned
+
+This will make order of html element render in reverse order.
+
+To see how you can add code snippets, see below:
+
+```css
+main>section>div.card {
+  display: flex;
+  flex-direction: row-reverse;
+  width: calc(32.5rem / 0.5);
+}
+```
+
+If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+
+### Continued development
+
+Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+
+Learning more how to use flexbox in different ways.
+
+### Useful resources
+
+- [MDN - Responsive Image](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) - This helped me for set images for mobile and desktop.
+- [W3C - Make Overlay Image](https://www.w3schools.com/howto/howto_css_image_overlay.asp) - This is tutorial from the W3C it helped me to make overlay images. It look like a filter above images.
+
+## Author
+
+- Frontend Mentor - [@mikhael7](https://www.frontendmentor.io/profile/@mikhael7)
+- Github - [@mikhael7](https://github.com/mikhael7)
+
+## Acknowledgments
+
+This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
