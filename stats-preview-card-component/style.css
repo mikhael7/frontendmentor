@@ -145,4 +145,4 @@ main>section>div.card>div.card-body>div.stats>li>ul>h3 {
     color: var(--color-stat-headings);
 }
 
-
+@media screen and (min-width: 996px) {}
