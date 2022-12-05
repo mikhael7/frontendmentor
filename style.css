@@ -136,3 +136,10 @@ main>section>div.card-container>div.card-luxury {
 main>section>div.card-container>div.card-luxury>button {
     color: var(--color-very-dark-cyan);
 }
+
+@media screen and (min-width: 996px) {
+    main>section>div.card-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
