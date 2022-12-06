@@ -97,14 +97,15 @@ main>section>div.card-container p {
 
 main>section>div.card-container button {
     margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     width: 75%;
     text-align: center;
     cursor: pointer;
     text-decoration: none;
-    border: none;
+    border: 1px solid transparent;
     border-radius: 2rem;
     font-size: var(--font-size-m);
-    padding: 1rem;
+    padding: .75rem;
     font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
 }
 
@@ -126,7 +127,6 @@ main>section>div.card-container>div.card-suvs>button {
     color: var(--color-dark-cyan);
 }
 
-
 main>section>div.card-container>div.card-luxury {
     background-color: var(--color-very-dark-cyan);
     border-bottom-left-radius: var(--border-radius-s);
@@ -136,9 +136,37 @@ main>section>div.card-container>div.card-luxury {
 main>section>div.card-container>div.card-luxury>button {
     color: var(--color-very-dark-cyan);
 }
+
+main>section>div.card-container>div.card-sedans>button:hover,
+main>section>div.card-container>div.card-suvs>button:hover,
+main>section>div.card-container>div.card-luxury>button:hover {
+    background: transparent;
+    border: 1px solid var(--color-very-light-gray);
+    color: var(--color-very-light-gray);
+}
+
 @media screen and (min-width: 996px) {
     main>section>div.card-container {
         flex-direction: row;
         justify-content: center;
+    }
+
+    main>section>div.card-container {
+        max-width: calc(32.5rem / 0.7);
+    }
+
+    main>section>div.card-container>div.card-sedans {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: var(--border-radius-s);
+    }
+
+    main>section>div.card-container>div.card-luxury {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: var(--border-radius-s);
+        border-top-right-radius: var(--border-radius-s);
+    }
+
+    main>section>div.card-container button {
+        margin-top: 4rem;
     }
 }
