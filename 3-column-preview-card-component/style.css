@@ -1,6 +1,3 @@
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/font-variation-settings */
-/* https://www.w3schools.com/csS/tryit.asp?filename=trycss_buttons_basic */
-
 @font-face {
     font-family: "Lexend Deca";
     src: url("./fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf") format("truetype-variations");
