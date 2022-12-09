@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "Kumbh Sans";
+    src: url('./fonts/Kumbh_Sans/KumbhSans-VariableFont_wght.ttf');
+    font-weight: 400, 700;
+    font-style: normal;
+}
+
+:root {
+    /* color palelte */
+    --color-dark-cyan: hsl(185, 75%, 39%);
+    --color-very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --color-dark-grayish-blue: hsl(227, 10%, 46%);
+    --color-dark-gray: hsl(0, 0%, 59%);
+
+    /* Fonts Sizes */
+    --font-size-default: 18px;
+    --font-size-s: 0.5em;
+    --font-size-sm: 0.75em;
+    --font-size-m: 1em;
+    --font-size-l: 1.5em;
+    --font-size-xl: 2em;
+    --font-size-xxl: 2.5em;
+    /* Fonts Weights */
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    /* Others */
+    --border-radius-s: 5pt;
+    --border-radius-m: 10pt;
+    --border-radius-l: 15pt;
+}
+
+html,
+body {
+    margin: 0;
+    background-color: var(--color-dark-cyan);
+    font-size: var(--font-size-default);
+    font-weight: var(--font-weight-normal);
+    font-family: "Kumbh Sans", Arial, Helvetica, sans-serif;
+}
+
+footer {
+    margin-top: 2rem;
+}
+
+* {
+    outline: 1px solid pink;
+}
+
+main {
+    /* centering card component */
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+main>div.background-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+}
+
+main>div.background-image>img.bg-top {
+    top: 0;
+    left: 0;
+    transform: translate(-7.5rem, -7.5rem);
+}
+
+main>div.background-image>img.bg-bottom {
+    bottom: 0;
+    right: 0;
+    transform: translate(7.5rem, 7.5rem);
+}
+
+main>section.card {
+    z-index: 1;
+    max-width: calc(32.5rem / 2);
+    background-color: white;
+    border-radius: var(--border-radius-s);
+}
+
+main>section.card>div.background-card>img {
+    border-top-left-radius: var(--border-radius-s);
+    border-top-right-radius: var(--border-radius-s);
+    object-fit: contain;
+    width: 100%;
+}
+
+main>section.card>div.card-body {
+    padding: 1rem;
+}
+
+main>section.card>div.card-body>div.card-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main>section.card>div.card-body>div.card-title>h1.username {
+    color: var(--color-very-dark-desaturated-blue);
+}
+
+main>section.card>div.card-body>div.card-title>h2.userage {
+    color: var(--color-dark-grayish-blue);
+}
+
+main>section.card>div.card-body>div.card-desc {
+    text-align: center;
+    font-size: var(--font-size-sm);
+    color: var(--color-dark-grayish-blue);
+}
+
+main>section.card>div.card-footer {
+    padding: 1rem;
+    font-size: var(--font-size-sm);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
