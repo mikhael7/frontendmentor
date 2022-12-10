@@ -42,10 +42,6 @@ footer {
     margin-top: 2rem;
 }
 
-* {
-    outline: 1px solid pink;
-}
-
 main {
     /* centering card component */
     margin: 0;
@@ -60,65 +56,131 @@ main {
 main>div.background-image {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    min-width: 100vw;
+    min-height: 100vh;
     position: fixed;
-    width: 100%;
+    justify-content: space-evenly;
 }
 
-main>div.background-image>img.bg-top {
+main>div.background-image>div.container-image-top {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+main>div.background-image>div.container-image-top>img.bg-top {
+    transform: translate(-7.5rem, -7.5rem);
+    max-width: calc(32.5rem / 1.75);
     top: 0;
     left: 0;
-    transform: translate(-7.5rem, -7.5rem);
 }
 
-main>div.background-image>img.bg-bottom {
+main>div.background-image>div.container-image-bottom {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+main>div.background-image>div.container-image-bottom>img.bg-bottom {
+    max-width: calc(32.5rem / 1.75);
+    transform: translate(7.5rem, 7.5rem);
     bottom: 0;
     right: 0;
-    transform: translate(7.5rem, 7.5rem);
 }
 
-main>section.card {
+main>article.card {
     z-index: 1;
     max-width: calc(32.5rem / 2);
     background-color: white;
     border-radius: var(--border-radius-s);
 }
 
-main>section.card>div.background-card>img {
+main>article.card>div.background-card>img {
     border-top-left-radius: var(--border-radius-s);
     border-top-right-radius: var(--border-radius-s);
     object-fit: contain;
     width: 100%;
 }
 
-main>section.card>div.card-body {
+main>article.card>div.card-body {
     padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-main>section.card>div.card-body>div.card-title {
+main>article.card>div.card-body>div.profile-image>img {
+    transform: translateY(-4rem);
+    margin-bottom: -4rem;
+    border-radius: 100%;
+    border: 0.25rem solid white;
+}
+
+main>article.card>div.card-body>div.card-title {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    width: 100%;
+    font-size: small;
 }
 
-main>section.card>div.card-body>div.card-title>h1.username {
+main>article.card>div.card-body>div.card-title>h1.username {
     color: var(--color-very-dark-desaturated-blue);
+    font-variation-settings: 'wght' var(--font-weight-bold);
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
 }
 
-main>section.card>div.card-body>div.card-title>h2.userage {
+main>article.card>div.card-body>div.card-title>h2.userage {
     color: var(--color-dark-grayish-blue);
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
 }
 
-main>section.card>div.card-body>div.card-desc {
+main>article.card>div.card-body>div.card-desc {
     text-align: center;
     font-size: var(--font-size-sm);
     color: var(--color-dark-grayish-blue);
 }
 
-main>section.card>div.card-footer {
-    padding: 1rem;
+main>article.card>div.card-body>div.card-desc>p {
+    margin: 0;
+}
+
+main>article.card>div.card-footer {
+    padding: 1rem 2rem;
     font-size: var(--font-size-sm);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    text-align: center;
+    border-top: 1px solid hsla(0, 0%, 59%, 0.25);
+}
+
+main>article.card>div.card-footer p {
+    color: var(--color-dark-grayish-blue);
+    margin: 0;
+    font-size: smaller;
+}
+
+main>article.card>div.card-footer p.metrics {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: medium;
+    color: var(--color-very-dark-desaturated-blue);
+    font-variation-settings: 'wght' var(--font-weight-bold);
+}
+
+@media screen and (min-width: 996px) {
+    main>div.background-image>div.container-image-top>img.bg-top {
+        max-width: calc(32.5rem / 0.5);
+    }
+
+    main>div.background-image>div.container-image-bottom>img.bg-bottom {
+        max-width: calc(32.5rem / 0.5);
+    }
 }
