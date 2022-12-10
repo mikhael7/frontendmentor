@@ -28,16 +28,18 @@ This repository will be used for sharing all my completed **FREE** challenges on
 |---|---|---|---|---|
 |Product Preview 💄|[frontendmentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|✅|HTML CSS
 |Interactive Rating ⭐️|[frontendmentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|✅|HTML CSS JS
-|QR code|[frontendmentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H/hub/qr-code-component-E6mM34t181)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|✅|HTML CSS
-|NFT Card|[frontendmentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U/hub/nft-preview-card-component-euE6z0lYQv)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|✅|HTML CSS
-|Order Summary|[frontendmentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj/hub/order-summary-component-dt8X6d8MuB)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|✅|HTML CSS
-|3 Column Card|[frontendmentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-/hub/3column-preview-card-component-_0Dox14PyD)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|✅|HTML CSS
-|Profile Card 🧑‍🚀|[frontendmentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ/hub)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|🚧|HTML CSS
+|QR code|[frontendmentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|✅|HTML CSS
+|NFT Card|[frontendmentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|✅|HTML CSS
+|Order Summary|[frontendmentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|✅|HTML CSS
+|Stats Preview|[frontendmentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|✅|HTML CSS
+|3 Column Card|[frontendmentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|✅|HTML CSS
+|Profile Card 🧑‍🚀|[frontendmentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|✅|HTML CSS
+|FAQ Accordion|[frontendmentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|🚧|HTML CSS JS
 
 ![junior](https://img.shields.io/badge/2-JUNIOR-green)
 | Name | Link | Level | Status | Tech Stack |
 |---|---|---|---|---|
-|News Homepage 📰|[frontendmentor](https://www.frontendmentor.io/solutions/newshomepagemain-ZBUX_ExBCH)|![junior](https://img.shields.io/badge/2-JUNIOR-green)|✅| HTML CSS JS
+|News Homepage 📰|[frontendmentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl)|![junior](https://img.shields.io/badge/2-JUNIOR-green)|✅| HTML CSS JS
 
 ## Credits
 
