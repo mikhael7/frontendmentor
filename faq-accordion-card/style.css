@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "Kumbh Sans";
+    src: url('./fonts/Kumbh_Sans/KumbhSans-VariableFont_wght.ttf');
+    font-weight: 400, 700;
+    font-style: normal;
+}
+
+:root {
+    /* color pallette */
+    /* --primary-text */
+    --color-very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --color-soft-red: hsl(14, 88%, 65%);
+    /* --primary-bg-gradient */
+    --color-soft-violet: hsl(273, 75%, 66%);
+    --color-soft-blue: hsl(240, 73%, 65%);
+    /* --neutral-text */
+    --color-very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --color-dark-grayish-blue: hsl(240, 6%, 50%);
+    /* --dividers */
+    --color-light-grayish-blue: hsl(240, 5%, 91%);
+
+    /* Fonts Sizes */
+    --font-size-default: 12px;
+    --font-size-s: 0.5em;
+    --font-size-sm: 0.75em;
+    --font-size-m: 1em;
+    --font-size-l: 1.5em;
+    --font-size-xl: 2em;
+    --font-size-xxl: 2.5em;
+    /* Fonts Weights */
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    /* Others */
+    --border-radius-s: 5pt;
+    --border-radius-m: 10pt;
+    --border-radius-l: 15pt;
+}
+
+html,
+body {
+    margin: 0;
+    font-size: var(--font-size-default);
+    font-weight: var(--font-weight-normal);
+    font-family: "Kumbh Sans", Arial, Helvetica, sans-serif;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: var(--border-radius-s);
+}
+
+main {
+    /* centering card component */
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to top, var(--color-soft-blue), var(--color-soft-violet));
+}
+
+main>section.card-section {
+    background: white;
+    max-width: calc(32.5rem /1.5);
+    display: flex;
+    flex-direction: column;
+}
+
+main>section>div.card-header>h1 {
+    font-size: 3rem;
+    font-variation-settings: 'wght' var(--font-weight-bold);
+}
+
+main>section>div.card-body {
+    color: var(--color-dark-grayish-blue);
+}
