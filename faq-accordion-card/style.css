@@ -51,6 +51,17 @@ footer {
     border-radius: var(--border-radius-s);
 }
 
+/* #region shared class */
+.accordion-active {
+    color: var(--color-very-dark-grayish-blue);
+}
+
+.hidden {
+    display: none;
+}
+
+/* #endregion shared class */
+
 main {
     /* centering card component */
     margin: 0;
@@ -68,13 +79,36 @@ main>section.card-section {
     max-width: calc(32.5rem /1.5);
     display: flex;
     flex-direction: column;
+    padding-left: 1em;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    border-radius: var(--border-radius-l);
+    width: 100%;
 }
 
 main>section>div.card-header>h1 {
+    text-align: center;
     font-size: 3rem;
     font-variation-settings: 'wght' var(--font-weight-bold);
 }
 
 main>section>div.card-body {
+    color: var(--color-very-dark-grayish-blue);
+}
+
+main>section>div.card-body>div.accordion-container button.accordion {
+    font-size: var(--font-size-default);
     color: var(--color-dark-grayish-blue);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+    background: transparent;
+    border: none;
+}
+
+main>section>div.card-body>div.accordion-container div.accordion-content {
+    border-bottom: 1px solid var(--color-light-grayish-blue);
+    padding-bottom: 1rem;
 }
