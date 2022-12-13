@@ -25,7 +25,7 @@ Background gradient:
 
 ### Neutral
 
-#### Text
+#### Text Card
 
 - Very dark grayish blue: hsl(237, 12%, 33%)
 - Dark grayish blue: hsl(240, 6%, 50%)
