@@ -3,6 +3,8 @@
 
 <!-- https://www.w3schools.com/howto/howto_js_accordion.asp -->
 <!-- https://www.w3schools.com/css/css3_gradients.asp -->
+<!-- https://web.dev/learn/design/picture-element/ -->
+<!-- https://www.w3schools.com/howto/howto_css_flip_image.asp -->
 
 <head>
   <meta charset="UTF-8">
@@ -33,34 +35,57 @@
     <section class="card-section">
       <div class="card-header">
         <!-- TODO: image srcset -->
-        <h1>FAQ</h1>
+        <div class="background">
+          <picture class="image-faq">
+            <source srcset="./images/illustration-woman-online-desktop.svg" media="(min-width: 75em)">
+            <source srcset="./images/illustration-woman-online-mobile.svg" media="(min-width: 40em)">
+            <img src="./images/illustration-woman-online-mobile.svg" alt="faq-image" loading="lazy" decoding="async">
+          </picture>
+          <picture class="image-shadow">
+            <source srcset="./images/bg-pattern-desktop.svg" media="(min-width: 75em)">
+            <source srcset="./images/bg-pattern-mobile.svg" media="(min-width: 40em)">
+            <img src="./images/bg-pattern-mobile.svg" alt="image-shadow" loading="lazy" decoding="async">
+          </picture>
+        </div>
       </div>
       <div class="card-body">
-        <button class="accordion">How many team members can I invite?</button>
-        <div class="accordion-content">
-          You can invite up to 2 additional users on the Free plan. There is no limit on
-          team members for the Premium plan.
+        <h1>FAQ</h1>
+        <div class="accordion-container">
+          <button class="accordion">How many team members can I invite?<span><img src="./images/icon-arrow-down.svg"
+                alt="icon-arrow-down"></span></button>
+          <div class="hidden accordion-content">
+            You can invite up to 2 additional users on the Free plan. There is no limit on
+            team members for the Premium plan.
+          </div>
         </div>
-        <button class="accordion">What is the maximum file upload size?
-        </button>
-        <div class="accordion-content">
-          No more than 2GB. All files in your account must fit your allotted storage space.
+        <div class="accordion-container">
+          <button class="accordion">What is the maximum file upload size?<span><img src="./images/icon-arrow-down.svg"
+                alt="icon-arrow-down"></span></button>
+          <div class="hidden accordion-content">
+            No more than 2GB. All files in your account must fit your allotted storage space.
+          </div>
         </div>
-        <button class="accordion">How do I reset my password?
-        </button>
-        <div class="accordion-content">
-          Click “Forgot password” from the login page or “Change password” from your profile page.
-          A reset link will be emailed to you.
+        <div class="accordion-container">
+          <button class="accordion">How do I reset my password?<span><img src="./images/icon-arrow-down.svg"
+                alt="icon-arrow-down"></span></button>
+          <div class="hidden accordion-content">
+            Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.
+          </div>
         </div>
-        <button class="accordion">Can I cancel my subscription?
-        </button>
-        <div class="accordion-content">
-          Yes! Send us a message and we’ll process your request no questions asked.
+        <div class="accordion-container">
+          <button class="accordion">Can I cancel my subscription?<span><img src="./images/icon-arrow-down.svg"
+                alt="icon-arrow-down"></span></button>
+          <div class="hidden accordion-content">
+            Yes! Send us a message, and we’ll process your request no questions asked.
+          </div>
         </div>
-        <button class="accordion"> Do you provide additional support?
-        </button>
-        <div class="accordion-content">
-          Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        <div class="accordion-container">
+          <button class="accordion"> Do you provide additional support?<span><img src="./images/icon-arrow-down.svg"
+                alt="icon-arrow-down"></span></button>
+          <div class="hidden accordion-content">
+            Chat and email support is available 24/7. Phone lines are open during normal business hours.
+          </div>
         </div>
       </div>
     </section>
