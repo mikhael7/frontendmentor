@@ -34,6 +34,7 @@
     --border-radius-s: 5pt;
     --border-radius-m: 10pt;
     --border-radius-l: 15pt;
+    --left: -64px;
 }
 
 html,
@@ -49,6 +50,10 @@ footer {
     padding: 1rem;
     background-color: white;
     border-radius: var(--border-radius-s);
+}
+
+* {
+    outline: 1px solid pink;
 }
 
 /* #region shared class */
@@ -87,19 +92,19 @@ main {
     background-image: linear-gradient(to top, var(--color-soft-blue), var(--color-soft-violet));
 }
 
-main>section.card-section {
+main > section.card-section {
     background: white;
-    max-width: calc(32.5rem /1.5);
+    max-width: calc(32.5rem / 1.5);
     display: flex;
     flex-direction: column;
-    padding-left: 1.5em;
+    padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-bottom: 2rem;
     border-radius: var(--border-radius-l);
     width: 100%;
 }
 
-main>section>div.card-body>h1 {
+main > section > div.card-body > h1 {
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -107,30 +112,30 @@ main>section>div.card-body>h1 {
     font-variation-settings: 'wght' var(--font-weight-bold);
 }
 
-main>section>div.card-header>div.background {
+main > section > div.card-header > div.background {
     position: relative;
     width: 100%;
 }
 
-main>section>div.card-header>div.background>picture.image-faq>img {
+main > section > div.card-header > div.background > picture.image-faq > img {
     position: absolute;
     top: -128px;
 }
 
-main>section>div.card-header>div.background>picture.image-shadow>img {
+main > section > div.card-header > div.background > picture.image-shadow {
     width: 100%;
 }
 
-main>section>div.card-body {
+main > section > div.card-body {
     color: var(--color-very-dark-grayish-blue);
 }
 
-main>section>div.card-body>div.accordion-container {
+main > section > div.card-body > div.accordion-container {
     border-bottom: 1px solid var(--color-light-grayish-blue);
     margin-bottom: 1rem;
 }
 
-main>section>div.card-body>div.accordion-container button.accordion {
+main > section > div.card-body > div.accordion-container button.accordion {
     color: var(--color-dark-grayish-blue);
     font-size: var(--font-size-default);
     justify-content: space-between;
@@ -142,40 +147,66 @@ main>section>div.card-body>div.accordion-container button.accordion {
     width: 100%;
 }
 
-main>section>div.card-body>div.accordion-container button.accordion:hover {
+main > section > div.card-body > div.accordion-container button.accordion:hover {
     color: var(--color-soft-red);
 }
 
-main>section>div.card-body>div.accordion-container div.accordion-content {
+main > section > div.card-body > div.accordion-container div.accordion-content {
     padding-bottom: 1rem;
 }
 
-@media screen and (min-width: 75em) {
-
-    /* main>section>div.card-header>div.background {
-        background: url("./images/illustration-box-desktop.svg");
-    } */
-    main>section.card-section {
-        flex-direction: row;
-        align-items: center;
+@media screen and (min-width: 768px) {
+    main > section.card-section {
+        padding-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         max-width: calc(32.5rem / 0.5);
     }
 
-    main>section>div.card-header>div.background>picture.image-faq>img {
-        left: -128px;
+    main > section > div.card-header > div.background {
+        position: relative;
+        max-width: 32.5rem;
+        max-height: 32.5rem;
+    }
+
+    main > section > div.card-header > div.background > div {
+        height: 184px;
+        width: 191px;
+        position: absolute;
+        left: -105px;
+        top: 100px;
+    }
+
+    main > section > div.card-header > div.background > div.img-box {
+        max-height: 32.5rem;
+        max-width: 32.5rem;
+        background-position: center;
+        background-image: url("./images/illustration-box-desktop.svg");
+    }
+
+    main > section > div.card-header > div.background > div.spacer {
+        max-width: 32.5rem;
+        max-height: 32.5rem;
+    }
+
+    main > section > div.card-header > div.background > picture.image-faq > img {
+        left: var(--left);
+        bottom: 0;
+        top: 0;
+        max-width: 32.5rem;
+    }
+
+    main > section > div.card-header > div.background > picture.image-shadow > img {
+        max-width: 32.5rem;
+        position: absolute;
+        left: var(--left);
+        bottom: 0;
         top: 0;
     }
 
-    main>section>div.card-header>div.background>picture.image-faq>img {
-        /* width: 50%; */
-
-    }
-
-    main>section>div.card-header>div.background>picture.image-shadow>img {
-        left: -128px;
-    }
-
-    main>section>div.card-body {
-        width: 100%;
+    main > section > div.card-body {
+        display: flex;
+        flex-direction: column;
+        gap: 20px 5px;
     }
 }
