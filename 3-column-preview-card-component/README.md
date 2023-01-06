@@ -57,20 +57,20 @@ I learned how to layouting using display flex from the mobile view to desktop vi
 CSS display flex for mobile view :
 
 ```css
-main>section>div.card-container {
-    display: flex;
-    flex-direction: column;
-    max-width: calc(32.5rem / 2);
+main > section > div.card-container {
+  display: flex;
+  flex-direction: column;
+  max-width: calc(32.5rem / 2);
 }
 ```
 
 CSS display flex for desktop view :
 
 ```css
-main>section>div.card-container {
-        flex-direction: row;
-        justify-content: center;
-    }
+main > section > div.card-container {
+  flex-direction: row;
+  justify-content: center;
+}
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
@@ -92,3 +92,5 @@ I will learn more and using more flex and grid in the future projects or even bo
 ## Acknowledgments
 
 This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+
+[vacamares](https://www.frontendmentor.io/profile/vcarames) - Thank you for your comments for tips and suggestions. 👏
