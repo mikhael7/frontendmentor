@@ -74,11 +74,13 @@ main>section>div.card-container>div {
 }
 
 main>section>div.card-container h1,
-button {
+h2,
+a {
     color: var(--color-very-light-gray);
 }
 
-main>section>div.card-container h1 {
+main>section>div.card-container h1,
+h2 {
     font-family: "Big Shoulders Display", Arial, Helvetica, sans-serif;
     font-size: var(--font-size-xxl);
     margin-top: 1rem;
@@ -92,13 +94,14 @@ main>section>div.card-container p {
     font-variation-settings: 'wght' var(--font-weight-normal);
 }
 
-main>section>div.card-container button {
-    margin-top: 0.5rem;
+main>section>div.card-container a {
+    display: block;
     margin-bottom: 0.5rem;
-    width: 75%;
+    width: 50%;
     text-align: center;
     cursor: pointer;
     text-decoration: none;
+    background-color: white;
     border: 1px solid transparent;
     border-radius: 2rem;
     font-size: var(--font-size-m);
@@ -112,7 +115,7 @@ main>section>div.card-container>div.card-sedans {
     border-top-left-radius: var(--border-radius-s);
 }
 
-main>section>div.card-container>div.card-sedans>button {
+main>section>div.card-container>div.card-sedans>a {
     color: var(--color-bright-orange);
 }
 
@@ -120,7 +123,7 @@ main>section>div.card-container>div.card-suvs {
     background-color: var(--color-dark-cyan);
 }
 
-main>section>div.card-container>div.card-suvs>button {
+main>section>div.card-container>div.card-suvs>a {
     color: var(--color-dark-cyan);
 }
 
@@ -130,13 +133,13 @@ main>section>div.card-container>div.card-luxury {
     border-bottom-right-radius: var(--border-radius-s);
 }
 
-main>section>div.card-container>div.card-luxury>button {
+main>section>div.card-container>div.card-luxury>a {
     color: var(--color-very-dark-cyan);
 }
 
-main>section>div.card-container>div.card-sedans>button:hover,
-main>section>div.card-container>div.card-suvs>button:hover,
-main>section>div.card-container>div.card-luxury>button:hover {
+main>section>div.card-container>div.card-sedans>a:hover,
+main>section>div.card-container>div.card-suvs>a:hover,
+main>section>div.card-container>div.card-luxury>a:hover {
     background: transparent;
     border: 1px solid var(--color-very-light-gray);
     color: var(--color-very-light-gray);
@@ -163,7 +166,8 @@ main>section>div.card-container>div.card-luxury>button:hover {
         border-top-right-radius: var(--border-radius-s);
     }
 
-    main>section>div.card-container button {
+    main>section>div.card-container a {
         margin-top: 4rem;
+        margin-bottom: 0;
     }
 }
