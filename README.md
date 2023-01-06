@@ -34,7 +34,8 @@ This repository will be used for sharing all my completed **FREE** challenges on
 |Stats Preview|[frontendmentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|✅|HTML CSS
 |3 Column Card|[frontendmentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|✅|HTML CSS
 |Profile Card 🧑‍🚀|[frontendmentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|✅|HTML CSS
-|FAQ Accordion|[frontendmentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|🚧|HTML CSS JS
+|FAQ Accordion|[frontendmentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|✅|HTML CSS JS
+|Social proof|[frontendmentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA)|![newbie](https://img.shields.io/badge/1-NEWBIE-cyan)|🚧|HTML CSS JS
 
 ![junior](https://img.shields.io/badge/2-JUNIOR-green)
 | Name | Link | Level | Status | Tech Stack |
