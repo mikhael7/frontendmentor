@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "League Spartan";
+  src: url("./fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf")
+    format("truetype-variations");
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  /* color pallete */
+  /* Primary */
+  --color-very-dark-magenta: hsl(300, 43%, 22%);
+  --color-soft-pink: hsl(333, 80%, 67%);
+  /* Neutral */
+  --color-dark-grayish-magenta: hsl(303, 10%, 53%);
+  --color-light-grayish-magenta: hsl(300, 24%, 96%);
+  --color-white: hsl(0, 0%, 100%);
+
+  /* Fonts */
+  --default-font-size: 15px;
+  --font-light: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+}
+
+html,
+body {
+  font-family: "League Spartan", Arial, Helvetica, sans;
+}
