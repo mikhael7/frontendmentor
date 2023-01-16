@@ -34,7 +34,7 @@ footer {
 
 html,
 body {
-  font-family: "League Spartan";
+  font-family: "League Spartan", Arial, Helvetica, sans;
   font-size: var(--default-font-size);
   margin: 0;
   background-position: top 0 left 0, bottom 0 right 0;
@@ -90,10 +90,10 @@ main > section.header > div.card-star > p {
 main > section > div.card-social {
   background-color: var(--color-very-dark-magenta);
   color: var(--color-white);
-  padding: 1.5rem;
+  padding: 0 1.5rem 1.5rem 1.5rem;
   border-radius: 0.5rem;
   display: grid;
-  grid-template-row: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   margin-bottom: 1rem;
 }
 main > section > div.card-social:last-child {
@@ -102,7 +102,6 @@ main > section > div.card-social:last-child {
 main > section > div.card-social > div.title {
   display: flex;
   gap: 1rem;
-  margin-bottom: 1.25rem;
   align-items: center;
 }
 main > section > div.card-social > div.title > img {
