@@ -37,7 +37,7 @@ body {
   font-family: "League Spartan", Arial, Helvetica, sans;
   font-size: var(--default-font-size);
   margin: 0;
-  background-position: top 0 left 0, bottom 0 right 0;
+  background-position: top left, bottom right;
   background-image: url("./images/bg-pattern-top-mobile.svg"),
     url("./images/bg-pattern-bottom-mobile.svg");
   min-height: 100vh;
@@ -50,16 +50,17 @@ main {
   min-height: 100vh;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  margin-top: 1.5rem;
 }
 main > section.header {
   text-align: center;
+  margin-top: 1.5rem;
 }
 main > section.header > h1 {
   font-size: 2.5em;
   line-height: 0.75em;
   color: var(--color-very-dark-magenta);
   font-variation-settings: "wght" var(--font-bold);
+  margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
@@ -73,8 +74,7 @@ main > section.header > p {
 main > section.header > div.card-star {
   background-color: var(--color-light-grayish-magenta);
   border-radius: 0.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 1rem 0;
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
@@ -95,6 +95,9 @@ main > section > div.card-social {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   margin-bottom: 1rem;
+}
+main > section > div.card-social:first-child {
+  margin-top: 1rem;
 }
 main > section > div.card-social:last-child {
   margin: 0;
