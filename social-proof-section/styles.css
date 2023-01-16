@@ -2,7 +2,7 @@
   font-family: "League Spartan";
   src: url("./fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf")
     format("truetype-variations");
-  font-weight: 400;
+  font-weight: 400 500 700;
   font-style: normal;
 }
 
@@ -23,7 +23,102 @@
   --font-bold: 700;
 }
 
+* {
+  /* outline: 1px solid pink; */
+}
+
+footer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 html,
 body {
-  font-family: "League Spartan", Arial, Helvetica, sans;
+  font-family: "League Spartan";
+  font-size: var(--default-font-size);
+  margin: 0;
+  background-position: top 0 left 0, bottom 0 right 0;
+  background-image: url("./images/bg-pattern-top-mobile.svg"),
+    url("./images/bg-pattern-bottom-mobile.svg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-top: 1.5rem;
+}
+main > section.header {
+  text-align: center;
+}
+main > section.header > h1 {
+  font-size: 2.5em;
+  line-height: 0.75em;
+  color: var(--color-very-dark-magenta);
+  font-variation-settings: "wght" var(--font-bold);
+  margin-bottom: 1.5rem;
+}
+
+main > section.header > p {
+  color: var(--color-dark-grayish-magenta);
+  font-variation-settings: "wght" var(--font-medium);
+  margin-bottom: 2rem;
+  font-size: 17px;
+}
+
+main > section.header > div.card-star {
+  background-color: var(--color-light-grayish-magenta);
+  border-radius: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+main > section.header > div.card-star > div.stars {
+}
+main > section.header > div.card-star > p {
+  font-variation-settings: "wght" var(--font-bold);
+  color: var(--color-very-dark-magenta);
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+main > section > div.card-social {
+  background-color: var(--color-very-dark-magenta);
+  color: var(--color-white);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-row: repeat(2, 1fr);
+  margin-bottom: 1rem;
+}
+main > section > div.card-social:last-child {
+  margin: 0;
+}
+main > section > div.card-social > div.title {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  align-items: center;
+}
+main > section > div.card-social > div.title > img {
+  border-radius: 100%;
+  max-width: 2rem;
+  max-height: 2rem;
+}
+main > section > div.card-social > div.title > div.group-name {
+  width: 100%;
+}
+main > section > div.card-social > div.title > div.group-name > p {
+  margin: 0.25rem;
+}
+main > section > div.card-social > div.title > div.group-name > p:last-child {
+  color: var(--color-soft-pink);
+}
+main > section > div.card-social > div.body {
+  letter-spacing: 0.05em;
 }
