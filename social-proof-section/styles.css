@@ -68,7 +68,7 @@ main>section.header>div.header-container>h1 {
   margin-bottom: 1.5rem;
 }
 
-main>section.header>div.header-container>p {
+main>section.header>div.header-container>h2 {
   color: var(--color-dark-grayish-magenta);
   font-variation-settings: "wght" var(--font-medium);
   margin-bottom: 2rem;
@@ -123,6 +123,11 @@ main>section.card>div.card-social>div.title>img {
 
 main>section.card>div.card-social>div.title>div.group-name {
   width: 100%;
+}
+
+main>section.card>div.card-social>div.title>div.group-name>h2 {
+  margin: 0.25rem;
+  font-size: 15pt;
 }
 
 main>section.card>div.card-social>div.title>div.group-name>p {
