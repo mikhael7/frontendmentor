@@ -33,7 +33,7 @@ footer {
 
 html,
 body {
-  font-family: "League Spartan", Arial, Helvetica, sans;
+  font-family: "League Spartan", Arial, Helvetica, sans-serif;
   font-size: var(--default-font-size);
   margin: 0;
 }
