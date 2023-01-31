@@ -14,8 +14,18 @@
 }
 
 /* Shared class */
-.font-bold {
-  font-variation-settings: 'wght' 500;
+.hidden {
+  display: none !important;
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+/* End Shared class */
+
+* {
+  outline: 1px solid pink;
 }
 
 html,
@@ -23,4 +33,137 @@ body {
   margin: 0;
   font-family: 'Manrope', Arial, Helvetica, sans-serif;
   font-size: 13px;
+  background-color: var(--color-neutral);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* card */
+
+main>section.card {
+  background-color: white;
+  border-radius: 1rem;
+  margin: auto;
+  max-width: 32.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* card - header */
+
+main>section.card>div.card-header>img {
+  width: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+}
+
+/* card - body */
+
+main>section.card>div.card-body {
+  padding: 1rem 3rem 0;
+  line-height: 1.5;
+}
+
+main>section.card>div.card-body>div.card-body-content>h1 {
+  color: var(--color-primary);
+}
+
+main>section.card>div.card-body>div.card-body-content>p {
+  color: var(--color-secondary);
+  letter-spacing: .05rem;
+  font-size: 16px;
+}
+
+/* card - footer */
+
+main>section.card>div.card-footer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 3rem 1rem;
+}
+
+main>section.card>div.card-footer>div.card-author {
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  gap: inherit;
+  width: 100%;
+}
+
+main>section.card>div.card-footer>div.card-author>img {
+  border-radius: 100%;
+  width: 48px;
+}
+
+main>section.card>div.card-footer>div.card-author>div.author {
+  width: 75%;
+}
+
+main>section.card>div.card-footer>div.card-author>div.author>h2 {
+  margin: 0;
+  font-size: 12pt;
+  color: var(--color-primary);
+}
+
+main>section.card>div.card-footer>div.card-author>div.author>p {
+  margin: 0;
+  color: var(--color-accent);
+}
+
+main>section.card>div.card-footer>div.card-author>div.share {
+  background-color: var(--color-neutral);
+  padding: .5rem;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+main>section.card>div.card-footer>div.card-author>div.share>img {
+  width: 16px;
+  margin: 0;
+}
+
+main>section.card>div.card-footer>div.card-share {
+  display: inherit;
+  align-items: inherit;
+  justify-content: space-between;
+  gap: inherit;
+  width: 100%;
+}
+
+main>section.card>div.card-footer>div.card-share>div.social-image {
+  display: inherit;
+  align-items: inherit;
+  gap: inherit;
+}
+
+main>section.card>div.card-footer>div.card-share>div.social-image>h2 {
+  color: var(--color-accent);
+}
+
+main>section.card>div.card-footer>div.card-share>div.fb-button {
+  text-decoration: none;
+}
+
+main>section.card>div.card-footer>div.card-share>div.fb-button>a>img {
+  vertical-align: middle;
+}
+
+main>section.card>div.card-footer>div.card-share>div.pinterest-button>a>img {
+  vertical-align: middle;
+  background-image: none;
+}
+
+main>section.card>div.card-footer>div.card-share>div.share {
+  background-color: var(--color-secondary);
+  padding: .5rem;
+  border-radius: 100%;
+  cursor: pointer;
 }
